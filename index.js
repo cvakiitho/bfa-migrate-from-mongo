@@ -50,8 +50,7 @@ const xmlOptions = {
 
 var xml = toXML(result, xmlOptions)
 
-var header = `
-<?xml version='1.1' encoding='UTF-8'?>
+var header = `<?xml version='1.1' encoding='UTF-8'?>
 <com.sonyericsson.jenkins.plugins.bfa.PluginImpl plugin="build-failure-analyzer@1.27.1">
   <noCausesEnabled>true</noCausesEnabled>
   <noCausesMessage>No problems were identified. If you know why this problem occurred, please add a suitable Cause for it.</noCausesMessage>
@@ -64,8 +63,7 @@ var header = `
   <fallbackCategoriesAsString></fallbackCategoriesAsString>
   <knowledgeBase class="com.sonyericsson.jenkins.plugins.bfa.db.LocalFileKnowledgeBase">
 `
-var footer = `
-  </knowledgeBase>
+var footer = `</knowledgeBase>
   <nrOfScanThreads>3</nrOfScanThreads>
   <maxLogSize>0</maxLogSize>
   <graphsEnabled>false</graphsEnabled>

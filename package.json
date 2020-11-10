@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jstoxml": "^2.0.1",
     "object-to-xml": "^2.0.0"
   }
 }

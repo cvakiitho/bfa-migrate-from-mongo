@@ -4,14 +4,16 @@
   <doNotAnalyzeAbortedJob>false</doNotAnalyzeAbortedJob>
   <knowledgeBase class="com.sonyericsson.jenkins.plugins.bfa.db.LocalFileKnowledgeBase"><causes>
   <entry>
-    <string>7859e155-dbea-4957-a686-ba7c16d5a2bd</string>
+    <string>a7b5a572-0ab2-414f-a042-305a5542bf66</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Connection Error during ABAP upload</name>
       <description>An error occurred while connecting to ABAP system
 
 In project portal check the configuration for ABAP upload. If it is correct, create a DLM incident to component DEV-IW-GEN</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -24,13 +26,12 @@ In project portal check the configuration for ABAP upload. If it is correct, cre
           <pattern>.*JCO Connection Exception when processing: : Error when opening an RFC connection .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>7859e155-dbea-4957-a686-ba7c16d5a2bd</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>34c3cb04-1011-4d77-aa77-0556acbafe7f</string>
+    <string>1ef52e63-a27c-42e8-aadd-dc3a0299fb9c</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Code Check Error</name>
       <description>The build failed because the analysis-plugin code check tool detected a violation of priority "Very High".
@@ -41,22 +42,23 @@ You may also check the console output log for the errors. All indication for fix
 &lt;br&gt;
 In case you can not find a solution by yourself or think that this is a false positive, please please create an &lt;a href="https://github.wdf.sap.corp/S4FIORI-CD/fiori.pipeline/issues"&gt;issue&lt;/a&gt;
 </description>
-      <categories>
-        <categories>Quality</categories>
-        <categories>Issue</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Quality</string>
+          <string>Issue</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*\[ERROR\] Quality issue:.*:Very High!.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>34c3cb04-1011-4d77-aa77-0556acbafe7f</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>fac471f6-c924-4fde-afb6-905961bb0d95</string>
+    <string>5e128dc6-f91f-40d3-8703-56c2036bbb2d</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Parent Pom not found</name>
       <description>The parent pom version you reference was not found on Nexus
@@ -66,40 +68,42 @@ Possible error causes:
 - you reference an old snapshot version that has been deleted from Nexus
 - typo in your parent pom reference
 - temporary Nexus issues. In this case create a DLM incident to component DEV-IW-GEN</description>
-      <categories>
-        <categories>POM</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>POM</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*FATAL] Non-resolvable parent POM .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>fac471f6-c924-4fde-afb6-905961bb0d95</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>9b415f35-e5de-4e35-8165-0b068872190c</string>
+    <string>a26a186b-c05e-4612-9126-83ac51bf220b</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Client does not exist</name>
       <description>The client you provided for the ABAP upload does not exist in the upload system. Check your settings for ABAP upload in project portal and correct. 
 If you are sure they're OK, create a DLM Incident to component DEV-IW-GEN. </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Client .*is not available in this system.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>9b415f35-e5de-4e35-8165-0b068872190c</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>dc4ff328-00aa-4bcf-baba-57985afbf655</string>
+    <string>e3d96fea-3704-4714-b9e6-39c88789bff2</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>No hotfix needed.</name>
       <description>A hotfix is only required if in the maintenance system a version from a milestone release codesplit (MRC) was uploaded. Check your ReleaseContext. Take the highest *SP* ReleaseContext. </description>
@@ -108,13 +112,12 @@ If you are sure they're OK, create a DLM Incident to component DEV-IW-GEN. </des
           <pattern>.*can not be uploaded into Hotfix system.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>dc4ff328-00aa-4bcf-baba-57985afbf655</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>2b7bf086-a2ce-4104-9daf-c33670640422</string>
+    <string>bd565f90-2484-47a6-ad6b-2437212f87c0</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Request not in status  in Process </name>
       <description>&lt;!DOCTYPE html&gt;
@@ -145,21 +148,22 @@ If you are sure they're OK, create a DLM Incident to component DEV-IW-GEN. </des
 &lt;/body&gt;
 &lt;/html&gt;
 </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Inconsistent state - BSP locked in transport request but the correction request is not in status.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>2b7bf086-a2ce-4104-9daf-c33670640422</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>2e51a6b7-3321-47dd-b68d-2d2e319715ec</string>
+    <string>46a5bdf8-e01f-4918-9250-7756466fe7b4</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>wrongly defined dependency (LREP)</name>
       <description>&lt;!DOCTYPE html&gt;
@@ -205,216 +209,229 @@ If you are sure they're OK, create a DLM Incident to component DEV-IW-GEN. </des
 &lt;/body&gt;
 &lt;/html&gt;
 </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*==&gt; SAPUI5 library/component.*does not exist.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>2e51a6b7-3321-47dd-b68d-2d2e319715ec</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>399efc3f-4ddf-464e-9511-8b7005e2e138</string>
+    <string>4ffc9345-2a2a-4046-9b42-7abbf8b224d1</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Virus scan error</name>
       <description>Virus scan error. Solution: Create a DLM incident on component DEV-IW-GEN to check the virus scan setting in the system.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Virus scan server error.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>399efc3f-4ddf-464e-9511-8b7005e2e138</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>d1e498f4-0acb-4876-8c15-c758698f9fff</string>
+    <string>2a03e29a-91ce-41a5-8035-c0be8f3fe342</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>SWCV closed</name>
       <description>The software component version (SWC) to which the APP is assigned is closed. SWCV are typically closed at assembly of a support package. (from ECC -&gt; + two weeks ).  Solution: Check the milestones of your SWCV.  Check whether the enter system in project portal is the right system for the SWCV. </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Software compponent.*is not open for corrections.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>d1e498f4-0acb-4876-8c15-c758698f9fff</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>04e76247-8c3a-498b-ad84-392547f5ba4d</string>
+    <string>10211175-b6d9-42cf-905c-66438338433d</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>ZIP file not found</name>
       <description>The abap zip file  was not found. Check consistence between pom.xml and project portal. ( group ID )</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Error       ==&gt; HTTP status was 404 / Not Found.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>04e76247-8c3a-498b-ad84-392547f5ba4d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>06cbe299-40bc-4afa-b85b-bcd33cd877a9</string>
+    <string>bc4afc46-0030-496a-8038-15e25ef572f5</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Communication error to GTADIR</name>
       <description>The communication with GTADIR Server is not possible at the moment. This is in the most cases a temporary problem. 
 &lt;br&gt;
 Solution: Retry/rebuild the upload.  
 If rebuild fails , try again after 1 hour . If the issue still persists create a DLM ticket under DEV-IW-GEN</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Communication error to GTADIR.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>06cbe299-40bc-4afa-b85b-bcd33cd877a9</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>a6b032cd-99c0-474e-b6bd-5da4e2ee78c0</string>
+    <string>74d17f8a-1c7b-4da3-ba56-d198d8dfda5e</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>No package </name>
       <description>No development package assigned in Project portal for project.
 Request for package creation by creating DLM incident under the component DEV-IW-GEN</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*&lt;&lt;&lt; PACKAGE: NA</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>a6b032cd-99c0-474e-b6bd-5da4e2ee78c0</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>c221a589-0566-4ded-872b-86de940d88b6</string>
+    <string>a2457a38-a7f2-4577-b390-8ddc3bbdb053</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>mismatch transport layer</name>
       <description>The transport layer of package is not consistent to the transport target in the project portal. Solution: Correct transport target on project portal. If transport target is correct, create a DLM incident on component DEV-IW-GEN to change transport target of the development package.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Request.*does not have transport target.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>c221a589-0566-4ded-872b-86de940d88b6</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>8c861475-10eb-4198-8f1b-ca424f358204</string>
+    <string>c551f1cc-522c-4eee-a1e8-3d5f5c300f97</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Replication error (LREP) </name>
       <description>File can't be replicated into LREP
 create a DLM incident under DEV-IW-GEN
 </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Error       ==&gt; In replication mode files can only be written as local content.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>8c861475-10eb-4198-8f1b-ca424f358204</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>e1803c4d-05dd-4a66-bc3f-e32d92a479f3</string>
+    <string>ce9d0263-441a-42aa-bd23-66b7493badbf</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>wrong connection setup</name>
       <description>System connection for ABAP upload is wrong. Solution: Check your project portal entries for ABAP upload and also see additional required steps &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Automated+uploads+into+ABAP+systems+with+CI-pipeline+jobs" lang="en" hreflang="de"&gt;here&lt;/a&gt; .
 Just in case that project portal is set up correctly and you followed up all required activities create a DLM incident on component DEV-IW-GEN</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*for goal com.sap.fiori:ca.infra.tools-maven-plugin:1.4.1:upload are missing or invalid .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>e1803c4d-05dd-4a66-bc3f-e32d92a479f3</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>26412961-c694-45e7-b4d5-94cd43731d12</string>
+    <string>ea198513-bc08-4862-b36f-a399fd2e0287</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>FIORI_TOOLS missing</name>
       <description>The for the automated ABAP upload required tools are missing in the system. Solution: Create an DLM incident to import the tools.  
 Component - DEV-IW-GEN</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Function FIOCWB_VALIDATE_FIORI_PACKAGE not available.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>26412961-c694-45e7-b4d5-94cd43731d12</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>d699da18-9a7c-45ba-984a-74d024e35979</string>
+    <string>49aa4f8f-9843-4208-931a-062dd0224d72</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>downgrade of version not possible </name>
       <description>The version in the system is higher as the version which should be uploaded. Solution: Create a new version, e.g. in maintenance by triggering a new singleAppFlow. If the downgrade is mandatory create a DLM incident on component DEV-IW-GEN.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*ERROR: The last uploaded UI Version.*which should be uploaded.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>d699da18-9a7c-45ba-984a-74d024e35979</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>d3b2b733-8e91-4f1a-a669-74762562cefe</string>
+    <string>fb303986-6bc0-4004-a157-6f3e6db18550</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>GIT repository not available</name>
       <description>GIT repository could not be cloned. 
 Reason could be that the GIT repository is not available for this project or there is a temporary outage of GIT server. 
 Solution: Makes sure there is a valid GIT repository existing for this project. If the GIT server is not available retrigger the upload later.</description>
-      <categories>
-        <categories>GIT_Pull</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>GIT_Pull</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -424,113 +441,119 @@ Solution: Makes sure there is a valid GIT repository existing for this project. 
           <pattern>.*ERROR: Error cloning remote repo .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>d3b2b733-8e91-4f1a-a669-74762562cefe</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>4b606317-78c0-42a5-806f-35e3aff287b8</string>
+    <string>6b3e8a44-e173-4afa-a8c1-3ebcf560485b</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>User (FIOINFRA) is not authorized to create tasks</name>
       <description>Problem: The user used for upload in the ABAP System is not authorized to create tasks for a Transport Request.
 Solution: open BCP Ticket on DEV-IW-GEN to assign needed authorization.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*is not authorized to create tasks.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>4b606317-78c0-42a5-806f-35e3aff287b8</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>0a4bf12c-42ae-406a-bbab-6f6825eb8332</string>
+    <string>031d3260-806f-4bc1-ad26-41e7d0e65da4</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>component Local</name>
       <description>The corresponding development package is assigned to software component LOCAL. For uploads which should not be delivered the software component UIERHOME has to used. Solution: Change the software component assignment of the development package of the FIORI app in the backend system..
 &lt;br&gt;
 For a assigment of a corresponding SWC to the package please create a DLM ticket on DEV-IW-GEN
 </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*No development system found for component LOCAL in table FIORI_SYS_LIST.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>0a4bf12c-42ae-406a-bbab-6f6825eb8332</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>06a4af63-8d78-48bd-8da3-a420b7f8b260</string>
+    <string>383e83a2-f742-4c6d-a43f-454b2a98a19c</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>another deployment</name>
       <description>Another deployment is still running. This in the most cases a temporary problem. Solution: Restart your Jenkins-Job again. </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Another deployment is still running.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>06a4af63-8d78-48bd-8da3-a420b7f8b260</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>73961e18-871e-40d8-89b9-423b72893dd6</string>
+    <string>23540f15-0114-4878-96cf-1be04a537a4d</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Rebuild failed</name>
       <description>The retrigger of ABAP upload jobs fails due to missing environment variables. This is normally a temporary problem. Solution: Rebuild ABAP Upload again.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*FATAL: Null value not allowed as an environment variable: ABAPMSServer.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>73961e18-871e-40d8-89b9-423b72893dd6</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>6f34b3f9-5ead-4cfe-ab48-922f99e7d019</string>
+    <string>bc28e347-b9cd-4f28-a0b6-d9546c2728e3</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Upgrade running</name>
       <description>Upgrade still running: Logon not possible. Solution: Rebuild later again. </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Upgrade still running: Logon not possible.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>6f34b3f9-5ead-4cfe-ab48-922f99e7d019</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>df229450-ad35-4439-b34f-1926b44d5a97</string>
+    <string>7f71959c-99dd-4fae-b244-da5842b04c1b</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name> BSP locked in corr. req. not in status "In Process"</name>
       <description>Description:  BSP locked in transport request but the correction request in i7P is not in status "In Process".
 Solution: change status of correction request in I7p to "in process".</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -540,31 +563,31 @@ Solution: change status of correction request in I7p to "in process".</descripti
           <pattern> .*but the correction request is not in status "In Process".*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>df229450-ad35-4439-b34f-1926b44d5a97</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>cd9036a2-7373-4221-9670-eb8810b965f3</string>
+    <string>7d368b81-755a-4e9e-af84-1158ef475f68</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Release context</name>
       <description>The project is not subscribed correctly to a release context. Solution: Please contact your LOB to correct this !</description>
-      <categories>
-        <categories>singleAppFlow</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>singleAppFlow</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Error: Receiving application values for release context:.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>cd9036a2-7373-4221-9670-eb8810b965f3</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>597a18e8-8b60-4abe-a13e-a8ec83b086d1</string>
+    <string>a9041225-6731-4c0e-8a3b-5c41c11a6b3c</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>test html5</name>
       <description>&lt;!DOCTYPE html&gt;
@@ -599,95 +622,100 @@ Solution: change status of correction request in I7p to "in process".</descripti
           <pattern>.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>597a18e8-8b60-4abe-a13e-a8ec83b086d1</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>21b19b42-528b-4e8d-aeda-e5fb4deaa1bb</string>
+    <string>117666ae-96e7-4371-89f9-aecad34b201d</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Missing configuration in translation system</name>
       <description>User that is used for the up/download jobs misses appropriate authorization for your translation area. Configuration for the translation area has to be completed.. 
 Contact your translation coordinator</description>
-      <categories>
-        <categories>Translation</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Translation</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*You don't have authorization for operation PUT_ORIGINAL in translation area.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>21b19b42-528b-4e8d-aeda-e5fb4deaa1bb</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>f0b65f76-83a9-4f97-a233-ffef3d8d4f0e</string>
+    <string>13b5d5b2-c96c-4db4-881b-a19d0ff1dac7</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>No POM file found</name>
       <description>there is no POM available for this project</description>
-      <categories>
-        <categories>POM</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>POM</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*there is no POM in this directory.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>f0b65f76-83a9-4f97-a233-ffef3d8d4f0e</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>fd0466dc-f931-4374-b545-0f858485e5d0</string>
+    <string>6ea05cc3-ab67-44ac-988c-1a49ac5fe4c9</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>could not determine prefix </name>
       <description>could not determine prefix 
 for a workaround see &lt;a href="https://wiki.wdf.sap.corp/wiki/pages/viewpage.action?pageId=1868581217#Jenkins/GIT-Gerrit/Maven/Translation-1)Buildfailswiththeerrorformaven-coldwater-plugin"&gt;here&lt;/a&gt;</description>
-      <categories>
-        <categories>Maven</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Maven</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*could not determine prefix .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>fd0466dc-f931-4374-b545-0f858485e5d0</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>afd850ad-383e-4bb2-a303-9707b7f13adf</string>
+    <string>087a7747-3a24-43d6-bf9e-b180826f5cf6</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Empty test suite</name>
       <description>The test step fails as the test runner is trying to run an empty test suite - typically all test in your test suite html page testsuite.qunit.html are commented out.
 In case you don't want test to be executed you need to remove or rename the test suite file.</description>
-      <categories>
-        <categories>Quality</categories>
-        <categories>Issue</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Quality</string>
+          <string>Issue</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Found 0 test pages.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>afd850ad-383e-4bb2-a303-9707b7f13adf</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>e1a316f0-e2f4-43d2-8e15-42e3ba8f4eeb</string>
+    <string>dfffdb48-3555-4fea-bcbe-57d7a017fd36</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Checkmarx Job could not be triggered</name>
       <description>Possible reasons: job is disabled, job does not exist, checkmarx jenkins 
 &lt;a href="https://fio-cx.wdf.sap.corp"&gt;https://fio-cx.wdf.sap.corp&lt;/a&gt; is not reachable.</description>
-      <categories>
-        <categories>Checkmarx</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Checkmarx</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -697,13 +725,12 @@ In case you don't want test to be executed you need to remove or rename the test
           <pattern>.*Possible reasons: job is disabled, job does not exist, checkmarx jenkins is not reachable.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>e1a316f0-e2f4-43d2-8e15-42e3ba8f4eeb</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>98ccc5ee-dd4a-4c54-b56b-2480e7b76bde</string>
+    <string>d6a46202-21a9-4952-b8e0-3ca3fb7ffeb1</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>No Test results are  found</name>
       <description>The OPA5/Qunit tests were started but produce no test results. 
@@ -711,96 +738,101 @@ The test results are supposed to exist in **/target/surefire-reports/TEST*.xml.
 
 This could happen when you have the webapp/test/testsuite.qunit.html in place but contains no tests. 
 Either you don't want to execute tests, in that case rename or remove the test suite file. Or include some tests!</description>
-      <categories>
-        <categories>Quality</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Quality</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*No test report files were found.*Configuration error.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>98ccc5ee-dd4a-4c54-b56b-2480e7b76bde</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>ae9ddb2f-1d39-4b2a-9876-f5f113629231</string>
+    <string>89348cfe-2c77-4525-a7a3-dc6e16ebc8be</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>No pom.xml found</name>
       <description>There was no pom.xml file found in your project's base directory. Please create one.</description>
-      <categories>
-        <categories>POM</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>POM</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*There was an issue reading the projects pom.xml.*pom\.xml does not exist.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>ae9ddb2f-1d39-4b2a-9876-f5f113629231</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>32e841b9-3797-424a-a4dc-f6fcb464d510</string>
+    <string>6f23d6dd-95f5-47f4-b4d7-2d4f4f93d176</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Open Source Software Security vulnerabilities detected</name>
       <description>Open Source Software Security vulnerabilities with CVSS score below 7.0 detected. Please get in contact with your security responsible.</description>
-      <categories>
-        <categories>Whitesource</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Whitesource</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Open Source Software Security vulnerabilities with CVSS score greater or equal.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>32e841b9-3797-424a-a4dc-f6fcb464d510</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>296a36a7-f467-490e-a06e-3c2c2593f368</string>
+    <string>ddf4caae-937c-434f-8067-0a39772d69ec</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>UI5 server not reachable.</name>
       <description>Probably the server from where the ui5 libraries are fetched is not reachable. This is an issue which is normally temporarily</description>
-      <categories>
-        <categories>Quality</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Quality</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*ReferenceError: sap is not defined.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>296a36a7-f467-490e-a06e-3c2c2593f368</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>ecfb7630-8631-414b-97a5-744d9e1d8181</string>
+    <string>0d6b5e98-198a-4b68-a3b4-6e306e6121fc</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Cloud Upload Failure</name>
       <description>Cloud Upload Failed&lt;br&gt;
  The name must start with a lowercase character, followed by lowercase alphanumeric characters with a maximum length of 30 characters&lt;br&gt;
 Please create a DLM ticket on DEV-IW-GEN.</description>
-      <categories>
-        <categories>Cloud</categories>
-        <categories>Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Cloud</string>
+          <string>Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*The name must start with a lowercase character, followed by lowercase alphanumeric characters with a maximum length of 30 characters.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>ecfb7630-8631-414b-97a5-744d9e1d8181</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>3d0f9786-8634-4547-8b32-4c850579bb6e</string>
+    <string>3fb8c8f4-bd92-4a5e-8b0f-7f6f6022b1a0</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Testpage executed successfully but did not report any test results</name>
       <description>With the switch from synchronous to async loading UI5 does no longer allow test html files which produce no test results.&lt;br&gt;
@@ -810,13 +842,12 @@ Remove the test file in testsuite.qunit.html or qunit.runner.testsuite.html whic
           <pattern>.*The test .*executed successfully but did not report any tests at all\. Please review your test content.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>3d0f9786-8634-4547-8b32-4c850579bb6e</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>67937e92-7d44-43cc-bb59-b44fcca9b7b2</string>
+    <string>9e8d4efd-2641-4c96-88a6-a374404d64fe</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Overflow in ESLint check</name>
       <description>Typically happens when eslint tries to scan a minified 3rd party library in the repository. You need to exclude the 3rd party library from the eslint check  as follows: &lt;br&gt;
@@ -829,90 +860,93 @@ src/main/webapp/3rdparty/file1.js
           <pattern>.*Requested array size exceeds VM limit.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>67937e92-7d44-43cc-bb59-b44fcca9b7b2</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>826a7518-a7cb-4115-b79f-c6150761c4ea</string>
+    <string>aff64ec1-bbc8-4b5c-ad74-f116c42d2cd3</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>WhiteSource - no dependencies defined</name>
       <description>In package.json you need to define your open source libraries as dependencies. See 
 &lt;a href="https://github.wdf.sap.corp/pages/S4FIORI-CD/fiori-pipeline-docs/stages/whiteSource/"&gt;here.&lt;/a&gt;
 </description>
-      <categories>
-        <categories>Whitesource</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Whitesource</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*No dependencies defined in package.json.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>826a7518-a7cb-4115-b79f-c6150761c4ea</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>d5abe93c-62b8-45e3-9ead-6728be4d70f9</string>
+    <string>83daac15-fbf8-4049-89b3-2f9167b16aee</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Virus scanner issue</name>
       <description>The Abap zip file could not analyzed because of Virus scanner is used. Create a DLM message under DEV-IW-GEN</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Archive can not be read because of virus scaner issues.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>d5abe93c-62b8-45e3-9ead-6728be4d70f9</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>458884d9-f1ff-4027-b9f3-e83404a41d96</string>
+    <string>95a74b3e-3d4e-4bd1-aeb3-2334d0c5b42c</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Codecheck Error APPDESCRIPTOR_INVALID_UNKNOWN_ACH</name>
       <description>The value of the ACH node in the App Descriptor is checked against the list of valid ACH components in I7P, transaction ACRF. The ACH needs to be in upper case letters and flagged as "BCP selectable". &lt;br&gt;
 For customer message processing it is important that the correct ACH component is maintained in the App descriptor. In future ACH will be used by the FLP when creating tickets via the support tool. It is also used in our /UI5/APP_INDEX_CALCULATE report on ABAP to display the responsible ACH when adding errors to the log. &lt;br&gt;The ACH components can be found in system I7P, transaction ACRF. Make sure that you enter a component which is selectable in BCP.&lt;br&gt;&lt;br&gt;
 &lt;strong&gt;
 If you think this  is a false positive, please proceed as described &lt;a href="https://github.wdf.sap.corp/pages/S4FIORI-CD/fiori-pipeline-docs/#troubleshooting/ach/"&gt;here&lt;/a&gt;&lt;/strong&gt;</description>
-      <categories>
-        <categories>Qualiity</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Qualiity</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*APPDESCRIPTOR_INVALID_UNKNOWN_ACH.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>458884d9-f1ff-4027-b9f3-e83404a41d96</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>17023108-db06-430f-b811-ee8350c3abc0</string>
+    <string>5d0979c8-a353-4d98-9f42-4c76fbb01252</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>RELEASE_TASKS finished with ERROR</name>
       <description>Task can't be released . Retrigger the upload. This error occurs if a parallel upload into two systems is triggered.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*RELEASE_TASKS finished with ERROR.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>17023108-db06-430f-b811-ee8350c3abc0</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>7ec3b9e6-c137-462e-80f5-2f1268b19383</string>
+    <string>e5698c1e-0c7e-4926-8d07-aed061e49ed7</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>correction instruction missing</name>
       <description>To ensure that a customer can notes via the correction workbench it is mandatory that in maintenance for each version of a Fiori app a corresponding correction instruction exists.
@@ -921,93 +955,98 @@ Solution: Go to system I7P and create the required correction instructions.
 &lt;br&gt;
 For details on the correction process refer &lt;a href = "https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Correction+Process
 " &gt; here &lt;/a&gt;</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*no corresponding correction instruction.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>7ec3b9e6-c137-462e-80f5-2f1268b19383</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>4d514047-8dac-4923-b484-c0564203ef5a</string>
+    <string>a5368c16-1245-40fa-9be9-4378be3d9f38</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Locked in other request</name>
       <description>Objects are locked in another requests. The given request can't be used.  You have to merge the correction into one patch or you have to wait until the other patch is released.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*which locks the bsp.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>4d514047-8dac-4923-b484-c0564203ef5a</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>3094abb0-8577-4e8e-abbd-73d8ac40e09e</string>
+    <string>4a3b73d2-bd41-4875-a57a-ba1fa68c5390</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Missing required note</name>
       <description>To ensure that a correct correction instruction can be generated it is mandatory that the last for customer released version of a App is available in the Hotfix system. Create  DLM message under DEV-IW-GEN to triggered the installation of the required notes given in the log.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*must be implemented in the Hotfix system.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>3094abb0-8577-4e8e-abbd-73d8ac40e09e</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>9ade0e9f-492d-43eb-b624-77dfbfe774a0</string>
+    <string>1f6e78c7-040d-490f-a7e6-b272c70663da</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>wrong transport layer</name>
       <description>The generated workbench request is not compatible with assigned transport layer of the development package. Please create an DLM message under DEV-IW-GEN </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*No existing request can be used for change recording.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>9ade0e9f-492d-43eb-b624-77dfbfe774a0</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>5b5d1593-97e5-4dd1-99d9-5c1a52a6e074</string>
+    <string>2074fde9-ef2c-4fdb-9530-de4fb6ff6e38</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Error in ABAP Uplpad</name>
       <description>Check the build log for the stage. In case you can not find the root cause on your own, please create a DLM ticket in BCP for DEV-IW-GEN</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Stage ABAP Deploy.*status: FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>5b5d1593-97e5-4dd1-99d9-5c1a52a6e074</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>2b706113-6ed2-4e8c-96b8-cbb732d8a10d</string>
+    <string>a2c6f517-e75f-41a6-b7a9-1d1c221ecc21</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Translation Configuration wrong</name>
       <description>Something in the i18n.properties files or in the translation settings in pom.xml is wrong. Check the indications in error log for details</description>
@@ -1016,54 +1055,55 @@ For details on the correction process refer &lt;a href = "https://wiki.wdf.sap.c
           <pattern>.*Failed to execute goal com.sap.ldi:translation-plugin.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>2b706113-6ed2-4e8c-96b8-cbb732d8a10d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>5267b3ff-ca4d-4770-8762-d61df867b433</string>
+    <string>09d723db-4d7b-4d38-8bd5-92f0eb4a1cd1</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Wrong Paths in Test Code</name>
       <description>You set some wrong paths which let your tests not run. 
 For more details, please check first pattern in the &lt;a href="https://github.wdf.sap.corp/pages/S4FIORI-CD/fiori-pipeline-docs/#stages/karma/#known-issues"&gt;known issues&lt;/a&gt;  section.&lt;br&gt;
 If you can not solve the the problem please create an &lt;a href="https://github.wdf.sap.corp/S4FIORI-CD/fiori.pipeline/issues"&gt;issue&lt;/a&gt;</description>
-      <categories>
-        <categories>Karma</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Karma</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Uncaught Error: failed to load .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>5267b3ff-ca4d-4770-8762-d61df867b433</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>a2aae775-7bca-4ba7-9b4f-bf84af994573</string>
+    <string>f288698f-1c01-4e80-8026-85f0c411e8d7</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Vyper Tests Failed</name>
       <description>Vyper Test has failed.&lt;br&gt;
 The details of the error is available in the "Vyper Test Report" which you can see on the left panel of the Jenkins build page.&lt;br&gt;
 If you can not solve the issue by yourself, please open an &lt;a href="https://github.wdf.sap.corp/sProcurement/vyperForAll/issues"&gt;issue&lt;/a&gt;</description>
-      <categories>
-        <categories>Vyper</categories>
-        <categories>failed</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Vyper</string>
+          <string>failed</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Vyper.*Tests.*Failed.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>a2aae775-7bca-4ba7-9b4f-bf84af994573</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>cf67029e-8ba1-41a4-87a9-96088b87da53</string>
+    <string>bebbbd47-b619-4d1a-abd8-634edbbec218</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>TestNew...</name>
       <description>Description...Test</description>
@@ -1072,21 +1112,22 @@ If you can not solve the issue by yourself, please open an &lt;a href="https://g
           <pattern>kahsdlkajshdjkashldkjhaskdjsa</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>cf67029e-8ba1-41a4-87a9-96088b87da53</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>31a903a0-c1aa-46dc-ad3e-692b5104c9d5</string>
+    <string>c38e7a93-fbf4-40f8-ba09-b654d50a599c</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>BSP name too long</name>
       <description>The BSP name is too long: maximum allowed length of BSP is 15 signs Please check the log and  &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Naming+Conventions#NamingConventions-UI(HTML5)"&gt;this wiki page&lt;/a&gt;&lt;/strong&gt; to get information on how to fix.
 
 
 </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -1096,21 +1137,22 @@ If you can not solve the issue by yourself, please open an &lt;a href="https://g
           <pattern>.*maximum length of BSP is 15 sign.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>31a903a0-c1aa-46dc-ad3e-692b5104c9d5</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>52385ebe-8bf8-493e-8adc-768b63fd163d</string>
+    <string>f4eff934-2fe8-4b83-829c-1323324127c0</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>submit not allowed</name>
       <description>Push to GIT repository failed due to lack of authorization
 
 Solution: access the project portal entry of this project and click on "Administrate Gerrit Project". In Gerrit administration on the "Access" page of the project set „Rights Inherit From“ to „fnf“ then click on "Save for review". Make sure you add "Administrators" as Reviewer!
 </description>
-      <categories>
-        <categories>GIT_Push</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>GIT_Push</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -1120,53 +1162,54 @@ Solution: access the project portal entry of this project and click on "Administ
           <pattern>.*prohibited by Gerrit: not permitted: update by submit on refs/heads/master.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>52385ebe-8bf8-493e-8adc-768b63fd163d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>15ffedfc-f56f-4805-9571-cf1787234bf6</string>
+    <string>ef7a2a92-7d92-4f14-b8cf-27dbb2b9f982</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>User not registered in Gerrit</name>
       <description>The translation download/ or pom-updater job submits the changes to all users defined in the project portal under project leads and committers. At least one of the listed users is not known in Gerrit.
 
 Solution: The respective colleagues have to logon once to https://git.wdf.sap.corp:8080 (GLOBAL credentials). If the colleagues are not available, as work around you can remove them from the member list in project portal or define an extraordinary mailing recipient list as described 
 &lt;a href="https://wiki.wdf.sap.corp/wiki/display/prodgit/Git+Developer+Workplace+Installation+and+Configuration#GitDeveloperWorkplaceInstallationandConfiguration-Step4:SetupGerritAccess"&gt;  here&lt;/a&gt;.</description>
-      <categories>
-        <categories>GIT_Push</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>GIT_Push</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*User not registered in Gerrit</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>15ffedfc-f56f-4805-9571-cf1787234bf6</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>8c62ab5a-e7bd-40ba-b91d-7a6bb5ea1628</string>
+    <string>83f1f27a-d0b9-4050-b016-8f9714dd09be</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>User Locked</name>
       <description>The user used for the deployment (fioinfra) is locked. Please create a DLM ticket to component DEV-IW-GEN in BCP.
 </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*JCO Exception while trying to retrieve ABAP Destination: User is locked.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>8c62ab5a-e7bd-40ba-b91d-7a6bb5ea1628</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>2753c9a3-ae94-4945-8078-31f894f8efee</string>
+    <string>6aec0538-6d8d-44db-9362-ed5ea4baf242</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>B0X system not reachable</name>
       <description>The translation system was not accessible when the build started. 
@@ -1174,21 +1217,22 @@ Solution: The respective colleagues have to logon once to https://git.wdf.sap.co
 This is probably a temporary issue.
 In order to synch the latest translation please retrigger manually this build, else wait for the next automatic upload/download. 
 Remember you need to be logged in to trigger a build.</description>
-      <categories>
-        <categories>Translation</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Translation</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Cannot establish connection to the translation system 'B0X'.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>2753c9a3-ae94-4945-8078-31f894f8efee</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>237af21a-cbc6-4430-baee-bba2bf6d94d5</string>
+    <string>e551ed56-be7d-4684-85c2-4e416ab31128</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Wrong Parent Pom</name>
       <description>The parent pom defined in your pom.xml could not be found on the Nexus server. 
@@ -1198,41 +1242,43 @@ Please check whether you use an outdated snapshot version. For more information 
           <pattern>Non-resolvable parent POM</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>237af21a-cbc6-4430-baee-bba2bf6d94d5</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>6938ba64-f4a7-4a74-861e-d179d4b4f61c</string>
+    <string>09006e22-a807-48e8-8dd8-530cff05980a</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Collection not assigned to a graph</name>
       <description>In the translation system, the collection is not yet assigned to a graph
 
 Contact your project's translation coordinator, have him or her assign the collection to the corresponding graph</description>
-      <categories>
-        <categories>Translation</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Translation</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Collection .* is not assigned to a graph.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>6938ba64-f4a7-4a74-861e-d179d4b4f61c</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>55056afb-f855-47dd-aec1-913d5686db8c</string>
+    <string>7f2b8606-639e-4468-94bb-9a4c4d490b98</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Obsolete dependency</name>
       <description>In your pom.xml file there's a dependency to a parent or a library that could not be resolved. You either reference a wrong, non-existing  version of the artifact or there's a temporary issue with Nexus
 
 Check your pom.xml file for dependencies to non existing artifact versions, also check in Nexus if the artifact exists in the referenced version. 
 If required, change the dependency (group, artifactIdD, version) accordingly, if you think the artifact is referenced correctly and there is an issue in Nexus create a DLM incident to component DEV-IW-GEN</description>
-      <categories>
-        <categories>General</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>General</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -1254,13 +1300,12 @@ If required, change the dependency (group, artifactIdD, version) accordingly, if
           <pattern>.*The build could not read 1 project .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>55056afb-f855-47dd-aec1-913d5686db8c</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>51e6196b-ad30-4334-bfe8-69744604feea</string>
+    <string>f70a63b8-cde2-4168-8492-6c84dc4dbe49</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Package does not exist</name>
       <description>&lt;!DOCTYPE html&gt;
@@ -1277,60 +1322,63 @@ If required, change the dependency (group, artifactIdD, version) accordingly, if
 &lt;/body&gt;
 &lt;/html&gt;
 </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Error: ABAP Package .* does not exist in the current system.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>51e6196b-ad30-4334-bfe8-69744604feea</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>49061e09-b9fd-428d-99f6-ee1972304084</string>
+    <string>49f5cdef-4295-4031-b001-6134e9a6bb97</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Releasing the transport failed </name>
       <description>There was an error during release of transport
 
 Check the log for details on the error cause. If you cannot fix the error yourself in the ABAP system, create a DLM incident to component DEV-IW-GEN</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Releasing the transport failed .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>49061e09-b9fd-428d-99f6-ee1972304084</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>9db80e82-8a65-47fe-940f-6b3ddd4ad656</string>
+    <string>b44c43b4-0abc-44c6-b227-b9fd6f6d1b27</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Gerrit voter job started without ChangeID</name>
       <description>Gerrit voter job was started manually without providing a valid Gerrit ChangeID
 See &lt;a href="https://wiki.wdf.sap.corp/wiki/pages/viewpage.action?pageId=1868581217#Jenkins/GIT-Gerrit/Maven/Translation-HowcanI(re-)triggeraGerritVoterbuild?" title="Gerrit_Refspec"&gt; here&lt;/a&gt;</description>
-      <categories>
-        <categories>Gerrit_Voter</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Gerrit_Voter</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*stderr: fatal: couldn't find remote ref [$]GERRIT_REFSPEC.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>9db80e82-8a65-47fe-940f-6b3ddd4ad656</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>e441889a-1cf7-4413-96b6-32a0f4df5879</string>
+    <string>9400a569-d202-4eeb-9a55-ebcedf7bbd05</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Quality Issues</name>
       <description>Project has quality issues of category "Very High" or "High"
@@ -1343,60 +1391,63 @@ Check the console log for details on the errors and correct the errors</descript
           <pattern>.*Quality issue: .*:High.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>e441889a-1cf7-4413-96b6-32a0f4df5879</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>60a6ce39-e020-4f1c-8aff-d8527688149e</string>
+    <string>ebc36bb0-3490-44ed-b153-59798286041b</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Test Failure</name>
       <description>At least one of your Qunit/OPA5 tests failed. Please check the &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Troubleshooting+Guide+for+Failing+OPA5+and+QUnit+Tests+During+the+Build"&gt;troubleshooting guide &lt;/a&gt;on how to fix the issue!</description>
-      <categories>
-        <categories>Quality</categories>
-        <categories>Issue</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Quality</string>
+          <string>Issue</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*There are test failures.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>60a6ce39-e020-4f1c-8aff-d8527688149e</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>0c98757d-3f0f-4a93-b6e1-dca53758f1ae</string>
+    <string>6de417ad-31ef-491d-a17b-647c8ffb6ff5</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>No Translation Type for key</name>
       <description>There's a key in the translation properties files with no translation type.&lt;br&gt;
 Please check &lt;a href=https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Translation#Translation-FileAdaptions&gt;this Wiki Page&lt;/a&gt; -&gt; Each line needs to be prefixed with an SAP text type ...&lt;br&gt;
 If you cant fix the issue on your own, you may create a  DLM Incident for SLS-OTS-MISC </description>
-      <categories>
-        <categories>Translation</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Translation</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>\[ERROR\] The key .*' has no translation type.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>0c98757d-3f0f-4a93-b6e1-dca53758f1ae</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>cabaff27-f8dd-4ccb-888c-d494a1724636</string>
+    <string>a5a5c25c-501c-4c74-93f3-dcbd8eb7f533</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Build aborted due to not running tests</name>
       <description>The build gets aborted after 10 minutes after the test runner started the browser. This means that the test runner started the test suite and did not proceed fur 10 minutes.
 One reason could be that the tests simply do not start at all. Best would be to debug the startup of the complete testsuite as described in the 
 &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Troubleshooting+Guide+for+Failing+OPA5+and+QUnit+Tests+During+the+Build#TroubleshootingGuideforFailingOPA5andQUnitTestsDuringtheBuild-DebugYourApp'sTestsLocallyonaTomcat"&gt;troubleshooting guide &lt;/a&gt;</description>
-      <categories>
-        <categories>Quality</categories>
-        <categories>Issue</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Quality</string>
+          <string>Issue</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -1409,20 +1460,21 @@ One reason could be that the tests simply do not start at all. Best would be to 
           <pattern>-*Build timed out .*after 10 minutes.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>cabaff27-f8dd-4ccb-888c-d494a1724636</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>a58e13c5-4b43-4f5a-9d2e-182f4e60b57e</string>
+    <string>8dcb6af3-3b37-4b77-b701-6358b19ce447</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>User of Release coordinator missing in system</name>
       <description>The user to which the correction request should be assigned isn't existing in the upload system. Typically the user of the release coordinator isn't existing in the system. 
 Solution: For the release coordinator a user has to be created via the user self service in the upload system.
 Request or unlock user via the Self Service (https://portal.wdf.sap.corp/go/devuser)</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -1432,70 +1484,72 @@ Request or unlock user via the Self Service (https://portal.wdf.sap.corp/go/devu
           <pattern>.* /SVT/CMREQ_M2	User.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>a58e13c5-4b43-4f5a-9d2e-182f4e60b57e</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>93d63580-1df5-4d62-9144-c2bda72843f5</string>
+    <string>1fc6f43c-b77a-42f9-b57e-17345417143a</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>No hotfix needed</name>
       <description>A hotfix is only required if in the maintenance system a version from a milestone release codesplit (MRC) was uploaded. Check your ReleaseContext. Take the highest *SP* ReleaseContext</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*can not be uploaded into Hotfix system.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>93d63580-1df5-4d62-9144-c2bda72843f5</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>de862c71-458b-4306-b5ce-4c6e7ae90c1a</string>
+    <string>670903f0-e6f8-45ee-9045-04f5a9a3db44</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>transport with wrong client</name>
       <description>The assigned ABAP transport has the wrong client. 
 Solution: Create a transport in client specified for UI5 FIORI application. The information can be found in the most cases on the logon screen of the ABAP system.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Transport request does not targets the upload client.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>de862c71-458b-4306-b5ce-4c6e7ae90c1a</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>a5df5d58-7460-4b82-ae70-fdb52eee15b4</string>
+    <string>1bb08123-07b2-4b90-b04f-6f86775fa5ea</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>No manifest.json found to read ACH </name>
       <description>No mainfest.json found in the root of nexus/*opt-static-abap zip file to read ACH Component. ACH is required for creation of correction measure.
 Solution: Relocate your manifest.json to the root of your project.
 </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*No manifest.json found in.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>a5df5d58-7460-4b82-ae70-fdb52eee15b4</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>00da37e0-4ba6-44cd-9899-a8cbbace2521</string>
+    <string>a5456bc8-e4e0-4f1f-84d3-181f5dafcdf8</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Not sufficient authorizations for upload</name>
       <description>&lt;!DOCTYPE html&gt;
@@ -1521,46 +1575,50 @@ Solution: Relocate your manifest.json to the root of your project.
 
 &lt;/body&gt;
 &lt;/html&gt;</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Error from correction.*is not authorized to change requests.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>00da37e0-4ba6-44cd-9899-a8cbbace2521</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>fa36c2ba-f3b7-4316-af83-1feb2cd60545</string>
+    <string>5b58fd1b-afa5-4cbc-8ed7-5db5cc9de1c1</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Hotfix only required if in maintenance a higher minor version</name>
       <description>The upload of patches y.x.z+1 into the Hotfix system is only required if a higher minor version y.x+n.w was uploaded into the maintenance system.  Solution: Check your ReleaseContext. Perform the upload into the maintenance system. Chose the highest *SP* ReleaseContext at the corresponding SingleAppFlow. </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*can not be uploaded into Hotfix system. A hotfix is only required.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>fa36c2ba-f3b7-4316-af83-1feb2cd60545</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>183edc1e-7d8c-4864-899c-80c486096f7c</string>
+    <string>79f99573-253f-47c3-a940-2884baaccb48</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Projectportal not available</name>
       <description>The project portal is not available. Check information on  the &lt;a href=https://wiki.wdf.sap.corp/wiki/pages/viewpage.action?pageId=1852169944&gt;DLM Wikipage&lt;/a&gt;
 If you don't find here information about the issue, create a DLM incident under DEV-IW-GEN.</description>
-      <categories>
-        <categories>Project</categories>
-        <categories>portal</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Project</string>
+          <string>portal</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -1570,55 +1628,58 @@ If you don't find here information about the issue, create a DLM incident under 
           <pattern>.*https://projectportal.tools.sap/.*not found. Host reports a temporary problem: 503 Service Unavailable.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>183edc1e-7d8c-4864-899c-80c486096f7c</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>34892087-cb8f-4066-aa1b-6c93b942d0cb</string>
+    <string>1020d763-376a-4c46-bad9-49be3b4e0e0b</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>pp-property-updater failed</name>
       <description>pp-property-updater failed
 Solution: Retrigger the build. If the issue persists create a DLM incident under DEV-IW-RELEASEBUILD</description>
-      <categories>
-        <categories>singleAppFlow</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>singleAppFlow</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*-pp-property-updater.*completed  : FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>34892087-cb8f-4066-aa1b-6c93b942d0cb</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>1a03eace-d1a3-4930-97a7-ad329e2f4cf0</string>
+    <string>1e8051df-18af-4d8e-b1ab-7786c640f8ce</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>success-mail failed</name>
       <description>success-mail failed</description>
-      <categories>
-        <categories>singleAppFlow</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>singleAppFlow</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*success-email.*completed  : FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>1a03eace-d1a3-4930-97a7-ad329e2f4cf0</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>54e05f00-55da-43d3-945f-9bc5e912d8a1</string>
+    <string>c0978318-9443-4db4-8ee6-673506fed01d</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>abap upload failed</name>
       <description>The ABAP upload has an error. To get the error navigate into the link above the error.</description>
-      <categories>
-        <categories>singleAppFlow</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>singleAppFlow</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -1628,125 +1689,130 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
           <pattern>.*cwb-upload.*completed  : FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>54e05f00-55da-43d3-945f-9bc5e912d8a1</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>e05c2e11-f95f-4ba0-a70b-88b571939223</string>
+    <string>961dbb0e-e95d-4530-97a5-aa99f24e58ed</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>FIOINFRA locked by another process</name>
       <description>To many Upload of user FIOINFRA are running parallel.  Solution: Retrigger upload again.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*SAP names file for FIOINFRA locked by another process.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>e05c2e11-f95f-4ba0-a70b-88b571939223</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>2c667fa2-78fc-4797-81ba-7a989ebbe956</string>
+    <string>fe4a1e37-b948-45bf-9e78-c5d6f9b5e53e</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>gav_info failed</name>
       <description>gav_info failed
 
 Solution: Retrigger the singleAppFlow.  If the issue persists create a DLM incident under DEV-IW-RELEASEBUILD</description>
-      <categories>
-        <categories>singleAppFlow</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>singleAppFlow</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*-gav_info.*completed  : FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>2c667fa2-78fc-4797-81ba-7a989ebbe956</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>efea7f7b-6c75-4b49-a5ba-afabeaf8fdb3</string>
+    <string>f10698ee-b90c-4ce0-a7d8-9784b75575fd</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>mrc failed</name>
       <description>mrc failed
 Solution: Retrigger the singleAppFlow. If the issue persists create a DLM incident under DEV-IW-RELEASEBUILD</description>
-      <categories>
-        <categories>singleAppFlow</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>singleAppFlow</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*-mrc.*completed  : FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>efea7f7b-6c75-4b49-a5ba-afabeaf8fdb3</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>ebdc3232-455f-418b-b014-72f457e7016a</string>
+    <string>89e478b1-040a-4288-89fe-bda33a5ba7e1</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>xmake call failed</name>
       <description>xmake call failed
 Solution: Retrigger the build. If the issue persists create a DLM incident under DEV-IW-RELEASEBUILD</description>
-      <categories>
-        <categories>singleAppFlow</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>singleAppFlow</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*-xmake_call.*completed  : FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>ebdc3232-455f-418b-b014-72f457e7016a</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>01317c84-a9e7-4033-a404-79f28c002fe8</string>
+    <string>90d3d4f2-7a50-4891-af52-2e2e0252f8c5</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>SYSTEM_CORE_DUMPED</name>
       <description>During the upload exception SYSTEM_CORE_DUMPED was raised. This often occurs at problems with virus scan.. Solution: Retrigger upload again. If error stays create a DLM incident under DEV-IW-GEN.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*SYSTEM_CORE_DUMPED.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>01317c84-a9e7-4033-a404-79f28c002fe8</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>af8e2cf8-c52e-4f41-bac3-bb7a6a0fc376</string>
+    <string>fe7c5ed4-4a5f-4711-adc0-ac1629d50d9c</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>request is already released</name>
       <description>The assigned workbench request is already released. Solution: If required generate a new workbench request</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Transport request.*is already released.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>af8e2cf8-c52e-4f41-bac3-bb7a6a0fc376</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>5ba9e4fd-e1dc-423f-b28f-4a9cbaf176b8</string>
+    <string>113fb731-7658-4c51-9318-fe536537ef95</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>LREP replication not possible because of locked objects</name>
       <description>&lt;!DOCTYPE html&gt;
@@ -1763,26 +1829,29 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
 &lt;/body&gt;
 &lt;/html&gt;
 </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Error       ==&gt; File .*locked.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>5ba9e4fd-e1dc-423f-b28f-4a9cbaf176b8</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>f9344e75-3e28-493d-b421-b75c1d80484f</string>
+    <string>f6f934e3-226e-4be4-ba9a-754b07fdf1ba</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>package mismatch</name>
       <description>In project portal entered development package is not same as development package which is assigned to BSP in target system. Solution: Change development package in project portal or create DLM incident under DEV-IW-GEN to relocate the FIORI App to another development package. </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -1792,69 +1861,71 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
           <pattern>.*entered package is not the same as in TADIR.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>f9344e75-3e28-493d-b421-b75c1d80484f</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>b05bbc08-c101-4b69-9ac7-09cb454ddcc8</string>
+    <string>331903cf-9a7b-449f-a693-931f0c031776</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>invalid email adress</name>
       <description>In the corresponding project an email under project members is maintained which does not exist, e.g. due to the employee as left SAP.</description>
-      <categories>
-        <categories>email</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>email</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Error on sending Email: Invalid Addresses.*Address not found.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>b05bbc08-c101-4b69-9ac7-09cb454ddcc8</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>a30345a6-2ff9-462c-9fb7-a7acbed66f30</string>
+    <string>7d7ea371-0f0b-48d5-b25e-43853811f486</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Deletion of object failed. Descriptor or variant is referenced by </name>
       <description>Error: Failed to delete descriptor of application FIN_AA_MSTR_WL from layered repository
           Deletion of fin.aa.master.worklist failed. Descriptor or variant is referenced by appconfig/vendor/F777874002D7540724ABAB49D20FC992.6F844F45234B150EFE6CE70E4917E8A3/
 Solution: please create Ticket on CA-UI5-FL-LRP</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Deletion.* .*failed.* .*is referenced by.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>a30345a6-2ff9-462c-9fb7-a7acbed66f30</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>9ca61172-aa88-42b7-a595-34478141794f</string>
+    <string>b8204e59-c1c5-4c9e-be9a-03d42c70ce57</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>No destination to development system found</name>
       <description>The system is not able to calculate the infinity system of the to the BSP assigned development package. One reason can be that the connection to the GTADIR was temporary not available  Solution: Retrigger the upload. If the error occurs again, create a DLM incident on component DEV-IW-GEN</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.* No destination to development system found.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>9ca61172-aa88-42b7-a595-34478141794f</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>8d685c2f-6e53-48da-842a-fd81f2c48501</string>
+    <string>cd437539-33f0-4779-9798-2bcd7020abbd</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>BSP has to end with S1</name>
       <description>&lt;!DOCTYPE html&gt;
@@ -1871,21 +1942,22 @@ Solution: please create Ticket on CA-UI5-FL-LRP</description>
 &lt;/body&gt;
 &lt;/html&gt;
 </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*All BSPs in software component UIS4HOP1 and UIEPPMS4 has to end with S1.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>8d685c2f-6e53-48da-842a-fd81f2c48501</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>c10d265c-9515-47b9-8ee9-cc8c7f6cb352</string>
+    <string>1c0f9950-fbf8-4796-80f1-23b41eee6739</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Original issue</name>
       <description>&lt;!DOCTYPE html&gt;
@@ -1901,8 +1973,10 @@ Solution: please create Ticket on CA-UI5-FL-LRP</description>
 
 &lt;/body&gt;
 &lt;/html&gt;</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -1912,32 +1986,32 @@ Solution: please create Ticket on CA-UI5-FL-LRP</description>
           <pattern>.*Exists in other original system.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>c10d265c-9515-47b9-8ee9-cc8c7f6cb352</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>91c7354e-3f97-43d3-bee8-95f6a1840187</string>
+    <string>23e5ba14-6d2a-4998-b137-7b8d8ebe5bb2</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>SICF node missing</name>
       <description>Error: SICF node OBJECT_NAME is missing
 Solution: delete BSP and create (upload) it again. Don´t do anything manually, all steps must be done by the Tools !</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*SICF node.*is missing.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>91c7354e-3f97-43d3-bee8-95f6a1840187</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>616303cc-4248-433a-b6fc-ec2d5ab6ca76</string>
+    <string>0b77b857-68d5-4227-a1e2-c3b80e56cad6</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Target group is not defined</name>
       <description>&lt;!DOCTYPE html&gt;
@@ -1953,21 +2027,22 @@ Solution: delete BSP and create (upload) it again. Don´t do anything manually, 
 
 &lt;/body&gt;
 &lt;/html&gt;</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*target group.*is not found in TMS.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>616303cc-4248-433a-b6fc-ec2d5ab6ca76</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>0be7e5b2-8ef2-43bf-998b-1a792f5bc60f</string>
+    <string>91535496-9ecc-4610-b698-fd7dbaae9fb8</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>no local upload</name>
       <description>&lt;!DOCTYPE html&gt;
@@ -1983,21 +2058,22 @@ Solution: delete BSP and create (upload) it again. Don´t do anything manually, 
 
 &lt;/body&gt;
 &lt;/html&gt;</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*FIORI_SYS_LIST for Software componnent LOCAL.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>0be7e5b2-8ef2-43bf-998b-1a792f5bc60f</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>9735f162-3720-4dc8-b6a3-6ef42bb2ec7d</string>
+    <string>2f398a4d-2921-4591-a112-8b714cf439d0</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Technical Error</name>
       <description>&lt;!DOCTYPE html&gt;
@@ -2014,58 +2090,61 @@ Solution: delete BSP and create (upload) it again. Don´t do anything manually, 
 &lt;/body&gt;
 &lt;/html&gt;
 </description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*JCO Connection Exception when processing: :.*unknown.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>9735f162-3720-4dc8-b6a3-6ef42bb2ec7d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>8ff233e9-8722-4dff-bc6c-06ecbf5e8ecd</string>
+    <string>10722654-5a0c-4d04-8f54-e57f38e477b9</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Package missmatch</name>
       <description>Package entered in projectportal is not the same as in ABAP system. Solution adjust package in project portal</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*entered package is not the same as in TADIR.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>8ff233e9-8722-4dff-bc6c-06ecbf5e8ecd</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>073963b9-2ed6-4141-bb84-c27998ed5be0</string>
+    <string>3e003f05-ad35-4193-90db-7f9b83840fb9</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>no Transport Request Id</name>
       <description>For a hotfix relevant release context the "Cloud Edition Hotfix Transport Request Id" is mandatory. Solution: Enter a Cloud Edition Hotfix Transport Request Id &lt;br&gt;
 For details refer &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fioritech/How+to+perform+a+Cloud-Hotfix-Based+Automated+Release+Build"&gt;here &lt;/a&gt;</description>
-      <categories>
-        <categories>singleAppFlow</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>singleAppFlow</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*For a hotfix relevant release context.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>073963b9-2ed6-4141-bb84-c27998ed5be0</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>6a0b460f-6cd3-4c7b-9b60-fe7a479e4ddf</string>
+    <string>ecd8fac2-a649-49ab-a54d-e2740a5b6542</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Page delitions found</name>
       <description>Error: during upload pages of a BSP in the System will compared with pages in the Archive.
@@ -2075,47 +2154,51 @@ You can delete the content of the pages, but not the pages itself.
 
 Solution:  delete the content and usage of the pages, but not the pages itself
 If deletion of pages is needed in any case, please open an BCP Ticket on DEV-IW-GEN.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Page delitions found !.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>6a0b460f-6cd3-4c7b-9b60-fe7a479e4ddf</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>a5f08838-918e-4a3c-af4f-630b293e40f4</string>
+    <string>525c7c12-764c-4c13-8c87-8c4940d68285</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>NO Release Context</name>
       <description>No Release context is entered. For a SingleAppFlow is mantatory to enter a Release Context.   
 Refer to the &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fioritech/How+to+perform+an+Automated+Release+Build"&gt; link &lt;/a&gt; for triggering the SingleAppFlow manually.
 
 Solution: Restart the SingleAppFlow with a Release Context. For questions contact your LOB release coordinator</description>
-      <categories>
-        <categories>singleAppFlow</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>singleAppFlow</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Error: No input found for parameter: Release Context.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>a5f08838-918e-4a3c-af4f-630b293e40f4</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>a41ed9e1-2cd9-41b0-8fee-2141c1531ac4</string>
+    <string>a2555ffb-103a-4e50-abaa-50fc60b49483</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>UYT not available</name>
       <description>Central FIORI app infinity system UYT is not available. Please check the status of the system on https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Infrastructure. If you don't find information about UYT create a message under DEV-IW-GEN.</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
@@ -2128,89 +2211,92 @@ Solution: Restart the SingleAppFlow with a Release Context. For questions contac
           <pattern>.*ERROR.*partner.*ldciuyt.wdf.sap.corp.*not reached.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>a41ed9e1-2cd9-41b0-8fee-2141c1531ac4</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>2310fa1c-9631-4712-81f5-7d34866ebe80</string>
+    <string>54716720-720b-417e-b2cc-b31ecebabcc3</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Obsolete parent pom points to B0Y</name>
       <description>The parent pom version you use is outdated and points to obsolete translation system B0Y.
 Use the newest parent pom version as listed &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Pom.xml+file+-+structure+and+function#Pom.xmlfile-structureandfunction-ParentPOMVersions"&gt;here&lt;/a&gt;.
 
 </description>
-      <categories>
-        <categories>Translation</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Translation</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Cannot establish connection to the translation system 'B0Y'.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>2310fa1c-9631-4712-81f5-7d34866ebe80</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>d750b325-b793-47eb-9268-8313d41f54fc</string>
+    <string>7179b969-7a35-4708-b4aa-704aeba64084</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Branch not found</name>
       <description>The branch was not found in GIT repository. Verify the repository and branch configuration for this job</description>
-      <categories>
-        <categories>GIT_Pull</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>GIT_Pull</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Couldn't find any revision to build.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>d750b325-b793-47eb-9268-8313d41f54fc</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>62f34ae4-abae-44d3-8acd-c1f268b55424</string>
+    <string>c95ed7db-296d-4a23-9343-d2de82b2ef31</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Parent pom version is not provided </name>
       <description>The new parent pom version is not provided properly; check your Project Portal Entry's properties!</description>
-      <categories>
-        <categories>Project</categories>
-        <categories>Portal</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Project</string>
+          <string>Portal</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*the new parent pom version .* is not provided properly.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>62f34ae4-abae-44d3-8acd-c1f268b55424</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>d7a20e64-8c84-408c-95cb-36227ba3a477</string>
+    <string>fd3fce37-497e-45d8-8c0e-25434e0d7f13</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Archive not existing</name>
       <description>The Abap Zip file which should be uploaded is not existing in on Nexus. Solution: Retrigger the corresponding  CI build or SingleAppFlow</description>
-      <categories>
-        <categories>ABAP_Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ABAP_Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*version.json : Archive empty, corrupt, or IV_URL is wrong !.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>d7a20e64-8c84-408c-95cb-36227ba3a477</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>a41838e4-70c0-4b73-a044-5e0fcfdc49c1</string>
+    <string>72458b16-39dc-47e2-b8d0-3866fdb56a85</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>ESLint found an error</name>
       <description>There is at least one linting error. The details of the error is available in the "ESLint Test Report" which you can see on the left panel of the Jenkins build page. &lt;br&gt;
@@ -2218,60 +2304,63 @@ You may also check the console output log for the errors. All indication for fix
 &lt;br&gt;
 For more information please check  &lt;a href="https://github.wdf.sap.corp/pages/S4FIORI-CD/fiori-pipeline-docs/#stages/eslintTests/"&gt;here&lt;/a&gt;&lt;br&gt;
 In case you can not find a solution by yourself or think that this is a false positive, please create an &lt;a href="https://github.wdf.sap.corp/S4FIORI-CD/fiori.pipeline/issues"&gt;issue&lt;/a&gt;</description>
-      <categories>
-        <categories>Quality</categories>
-        <categories>Issue</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Quality</string>
+          <string>Issue</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*ErrorEslint:hudson.AbortException: script returned exit code 1.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>a41838e4-70c0-4b73-a044-5e0fcfdc49c1</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>bf45c9ec-6d3f-421c-8284-edbb9543a581</string>
+    <string>de5edd54-c4d0-4cdb-a303-532e53de7ece</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Failed to get SAST scan results</name>
       <description>No scan results could be retreived from Checkmarx server. This might be a temporary issue with Checkmarx server. 
 For issues with the Checkmarx server  open a ticket &lt;a href="https://sectest.mo.sap.corp/rt/ "&gt;here&lt;/a&gt;  , then choose "New Ticket" ==&gt; "Checkmarx".
 Make sure you provide a link to the job log in the ticket.</description>
-      <categories>
-        <categories>Checkmarx</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Checkmarx</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Failed to get SAST scan results.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>bf45c9ec-6d3f-421c-8284-edbb9543a581</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>9fb0c1e5-8601-4c6a-8447-8b5693e3c593</string>
+    <string>2b33b379-4724-4761-abf9-58d61d865f3e</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>No Code Found</name>
       <description>The cloned git repository does not have folder webapp or src, looks like there is no code in your repository.</description>
-      <categories>
-        <categories>General</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>General</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*No source folder src or webapp found.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>9fb0c1e5-8601-4c6a-8447-8b5693e3c593</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>80681f31-f6e9-47ce-83d7-c923bf732b38</string>
+    <string>313a0306-d8f1-480e-9d03-babd29b8e14a</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Qunit OPA Tests -  script timeout</name>
       <description>As we run the tests via Selenium, there is timeout for all script interaction (e.g. testsuite discovery, read, pull of test).
@@ -2285,13 +2374,12 @@ Please check &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Troub
           <pattern>org.openqa.selenium.ScriptTimeoutException: asynchronous script timeout: result was not received in</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>80681f31-f6e9-47ce-83d7-c923bf732b38</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>e26118b7-234e-4e46-8cf3-b45d3c836e45</string>
+    <string>2350dda9-9096-4f93-9352-deb2bb444c77</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>testeg</name>
       <description>.Description..</description>
@@ -2300,32 +2388,32 @@ Please check &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Troub
           <pattern>.*error message.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>e26118b7-234e-4e46-8cf3-b45d3c836e45</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>43cdd7b0-e17b-40bb-bb81-e09bddb510fa</string>
+    <string>ca73674d-1ea0-4709-9e2d-6b62b25a1f90</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Test Page does not exist</name>
       <description>In your main test suite (e.g. webapp/test/testsuite.qunit.html) you refer to test page which does not exist. This could be either a typo or the file simply does not exist. Please correct the corresponding line in your test suite file.</description>
-      <categories>
-        <categories>Automated</categories>
-        <categories>Tests</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Automated</string>
+          <string>Tests</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Error while loading testpage.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>43cdd7b0-e17b-40bb-bb81-e09bddb510fa</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>10db137b-e5ff-4a2a-9c47-f917de0bcc53</string>
+    <string>b3d54be0-3fd9-41c3-bff7-031f376181f7</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Pipeline Configuration Not Schema Compliant</name>
       <description>Your pipelineConfig.yml is not schema compliant. Please check the schema from here
@@ -2336,32 +2424,32 @@ Please check &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Troub
           <pattern>.*Your pipelineConfig.yml is not schema compliant.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>10db137b-e5ff-4a2a-9c47-f917de0bcc53</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>0ffe3c08-90d1-47fe-a037-2d0f906ab3c7</string>
+    <string>227a22d6-253f-4323-9379-f32fb7dd9270</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Karma Tests Fail</name>
       <description>Your QUnit/OPA5 Tests failed.&lt;br&gt;
 Please proceed as described &lt;a href=https://github.wdf.sap.corp/pages/S4FIORI-CD/fiori-pipeline-docs/#stages/karma/#troubleshooting&gt;here&lt;/a&gt;.</description>
-      <categories>
-        <categories>Karma</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Karma</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*QUnit.*OPA5 Karma Failed.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>0ffe3c08-90d1-47fe-a037-2d0f906ab3c7</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>bcadb76c-4fd4-43a0-a9c3-94b6fe337ab3</string>
+    <string>77afc5e4-9d3a-401b-ab76-4e21d08aeb44</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Wrong Repository Structure</name>
       <description>Your repository does not comply to the supported structure:&lt;br&gt;
@@ -2377,55 +2465,56 @@ Other structures are not supported!
           <pattern>.*No source folder src or webapp found.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>bcadb76c-4fd4-43a0-a9c3-94b6fe337ab3</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>13fce420-fe51-4af3-9d94-1d09db32a9de</string>
+    <string>014ca86b-e04d-4607-95b4-1ac6af2f25fe</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>ESLint internal failure</name>
       <description>Linting was unsuccessful due to a configuration problem or an internal error. Report is not generated.
 
 Please create an &lt;a href="https://github.wdf.sap.corp/S4FIORI-CD/fiori.pipeline/issues"&gt;issue&lt;/a&gt;.</description>
-      <categories>
-        <categories>PIPELINE</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>PIPELINE</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*ErrorEslint:hudson.AbortException: script returned exit code 2.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>13fce420-fe51-4af3-9d94-1d09db32a9de</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>fd20f980-f853-4966-9371-7af4c1cc9a42</string>
+    <string>11641877-7101-4970-b00d-ba169695a9e9</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>ESLint check found an issue</name>
       <description>There is at least one linting error. The details of the error is available in the "Checkstyle Warnings" report. &lt;br&gt;
 You may also check the console output log for the errors. All indication for fixing errors are in the log.
 &lt;br&gt;
 In case you can not find a solution by yourself or think that this is a false positive, please please create an &lt;a href="https://github.wdf.sap.corp/S4FIORI-CD/fiori.pipeline/issues"&gt;issue&lt;/a&gt;</description>
-      <categories>
-        <categories>Quality</categories>
-        <categories>Issue</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Quality</string>
+          <string>Issue</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*ESLint check failed.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>fd20f980-f853-4966-9371-7af4c1cc9a42</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>2b170876-3c9b-4743-a084-88a18856e7dc</string>
+    <string>799580bb-d279-479f-a331-a44ccade2630</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>UIVeri5 Tests failed</name>
       <description>Your UIVeri5 tests failed. The details of the error is available in the " UIVeri5 Test Report" which you can see on the left panel of the Jenkins build page. &lt;br&gt;
@@ -2438,13 +2527,12 @@ For more information please check the docu for &lt;a href="https://github.wdf.sa
           <pattern>.*UIVeri5.*Test.*failed.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>2b170876-3c9b-4743-a084-88a18856e7dc</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>38e05906-d346-4664-be43-73a8f0fb306a</string>
+    <string>08b1c7db-dc88-48fd-899a-9025d3c26388</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>ECMA 6 code detected</name>
       <description>"const” is used in your JS code &lt;br&gt;
@@ -2457,13 +2545,12 @@ In the meantime you need to change your code accordingly.
           <pattern>.*no viable alternative at input 'const'.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>38e05906-d346-4664-be43-73a8f0fb306a</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>416118ee-60da-4a82-a98d-69deca187a0a</string>
+    <string>4bb825bb-c374-423c-be6f-ce815f32bbc9</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Fiori Dast Scan Failed</name>
       <description>Your Fiori Dast Scan failed.
@@ -2476,34 +2563,34 @@ If you can not solve the the problem please contact "DL S4HANA DAST Auditors"
           <pattern>.*Fiori Dast Scan Failed.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>416118ee-60da-4a82-a98d-69deca187a0a</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>2aa3a759-7449-4cc8-87fb-c51272db67bb</string>
+    <string>f675ee40-e6b2-4b4d-b16f-86b87959ee51</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Timeout in Cloud Upload</name>
       <description>Cloud Upload failed due to timeout. 
 &lt;p&gt;Please check the &lt;a href=https://wiki.wdf.sap.corp/wiki/pages/viewpage.action?pageId=1852169944&gt;DLM Wikipage&lt;/a&gt; for known issues in the landscape
 or create a DLM ticket on DEV-IW-GEN.&lt;/p&gt;</description>
-      <categories>
-        <categories>Cloud</categories>
-        <categories>Upload</categories>
+      <categories class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>Cloud</string>
+          <string>Upload</string>
+        </a>
       </categories>
       <indications>
         <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
           <pattern>.*Cloud Upload Failed!: Timeout after.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>2aa3a759-7449-4cc8-87fb-c51272db67bb</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>824e868f-cb42-4237-8209-5eec9bc437af</string>
+    <string>0edb1b36-48bc-4225-9938-d76502ef6483</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>No Parent Pom defined</name>
       <description>It is a prerequisite for a build that the right parent pom is defined in your pom.xml file - but there is none!&lt;br&gt;
@@ -2514,13 +2601,12 @@ Please check &lt;a href=https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Pom.xm
           <pattern>.*Could not detect parent project in pom.xml.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>824e868f-cb42-4237-8209-5eec9bc437af</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>be1603d0-1e14-45d9-9034-062d9684584e</string>
+    <string>816acecb-f132-407d-95c0-c78faa5c295b</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>Project not in Project Portal</name>
       <description>Seems like your project is not registered in Project Portal yet. 
@@ -2530,13 +2616,12 @@ Currently we only support projects from Project Portal.</description>
           <pattern>.*Project Id from Projectportal not found.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>be1603d0-1e14-45d9-9034-062d9684584e</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>
 <causes>
   <entry>
-    <string>faf4c453-b080-4887-9c62-60ba8862914a</string>
+    <string>160db7bd-fa82-4ae8-9db7-b9d8c4da4817</string>
     <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
       <name>No uuid found in i18n file</name>
       <description>Every test properties file (e.g. i18n.properties) must contain a unique uuid.
@@ -2547,7 +2632,6 @@ Please follow the instructions in &lt;a href=https://wiki.wdf.sap.corp/wiki/disp
           <pattern>.*Error finding uuid for file.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
-      <id>faf4c453-b080-4887-9c62-60ba8862914a</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
   </entry>
 </causes>  </knowledgeBase>

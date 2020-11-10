@@ -51,21 +51,51 @@ for (let el of jsonFail) {
   // <categories class="java.util.Arrays$ArrayList">                                                                                                                                                                     
   // <a class="string-array">                                                                           
   // <string>BQ5</string>                                                                             
+  // <string>B5</string>                                                                             
   // </a>                                                                                               
   // </categories>
-  if(el.categories) {
+  let tempArray = []
 
-    let resultCategory = {}
-    resultCategory._content = Object.assign(el.categories)
-    resultCategory._name = 'categories'
-    resultCategory._attrs = {class:'java.util.Arrays$ArrayList'}
-    console.dir(resultCategory)
-    el.categories = resultCategory
+  //retransform everthing
+  for (let key in el){
 
+    if(key == 'categories') {
+      let resultCategory = {}
+      resultCategory._content = {
+        _name: 'a',
+        _attrs: {class: 'string-array'},
+        _content: {
+          _name: 'string',
+          _content: el.categories
+        }
+      }
+      resultCategory._name = 'categories'
+      tempArray.push({ _name: 'categories', 
+        _attrs: {'class':'java.util.Arrays$ArrayList'},
+        _content: {
+          _name: 'a',
+          _attrs: {class: 'string-array'},
+          _content: {
+            _name: 'string',
+            _content: el.categories
+          }
+        }
+      })
+    } else {
+      tempArray.push({ _name: key, 
+        _content: el[key]
+      })
+    }
+    
   }
+  
+  console.dir(tempArray)
+
+
 
   //uuid 
-  let temp = Object.assign(el)
+  let temp = tempArray
+  // let temp = Object.assign(el)
   let id = uuid()
   temp.id = id
 

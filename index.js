@@ -50,7 +50,39 @@ const xmlOptions = {
 
 var xml = toXML(result, xmlOptions)
 
-fs.writeFileSync('./result.xml', xml)
+var header = `
+<?xml version='1.1' encoding='UTF-8'?>
+<com.sonyericsson.jenkins.plugins.bfa.PluginImpl plugin="build-failure-analyzer@1.27.1">
+  <noCausesEnabled>true</noCausesEnabled>
+  <noCausesMessage>No problems were identified. If you know why this problem occurred, please add a suitable Cause for it.</noCausesMessage>
+  <globalEnabled>true</globalEnabled>
+  <doNotAnalyzeAbortedJob>false</doNotAnalyzeAbortedJob>
+  <gerritTriggerEnabled>true</gerritTriggerEnabled>
+  <slackNotifEnabled>false</slackNotifEnabled>
+  <slackChannelName></slackChannelName>
+  <slackFailureCategories>ALL</slackFailureCategories>
+  <fallbackCategoriesAsString></fallbackCategoriesAsString>
+  <knowledgeBase class="com.sonyericsson.jenkins.plugins.bfa.db.LocalFileKnowledgeBase">
+`
+var footer = `
+  </knowledgeBase>
+  <nrOfScanThreads>3</nrOfScanThreads>
+  <maxLogSize>0</maxLogSize>
+  <graphsEnabled>false</graphsEnabled>
+  <testResultParsingEnabled>false</testResultParsingEnabled>
+  <testResultCategories></testResultCategories>
+  <sodVariables>
+    <minimumSodWorkerThreads>1</minimumSodWorkerThreads>
+    <maximumSodWorkerThreads>1</maximumSodWorkerThreads>
+    <sodThreadKeepAliveTime>15</sodThreadKeepAliveTime>
+    <sodWaitForJobShutdownTimeout>30</sodWaitForJobShutdownTimeout>
+    <sodCorePoolNumberOfThreads>5</sodCorePoolNumberOfThreads>
+  </sodVariables>
+</com.sonyericsson.jenkins.plugins.bfa.PluginImpl>
+`
+
+
+fs.writeFileSync('./result.xml', header + xml + footer)
 
 
 

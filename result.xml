@@ -29,7 +29,9 @@ In project portal check the configuration for ABAP upload. If it is correct, cre
           <pattern>.*JCO Connection Exception when processing: : Error when opening an RFC connection .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>e048ac39-7783-4a33-baf5-28fc4cc2e86e</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>e048ac39-7783-4a33-baf5-28fc4cc2e86e</string>
   </entry>
 </causes>
 <causes>
@@ -51,7 +53,9 @@ In case you can not find a solution by yourself or think that this is a false po
           <pattern>.*\[ERROR\] Quality issue:.*:Very High!.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>f9240c1a-91de-4f3e-9d18-321c8971dc87</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>f9240c1a-91de-4f3e-9d18-321c8971dc87</string>
   </entry>
 </causes>
 <causes>
@@ -71,7 +75,9 @@ Possible error causes:
           <pattern>.*FATAL] Non-resolvable parent POM .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>73329392-2d47-4e8c-8adc-c18a6cd4e7dd</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>73329392-2d47-4e8c-8adc-c18a6cd4e7dd</string>
   </entry>
 </causes>
 <causes>
@@ -86,7 +92,9 @@ If you are sure they're OK, create a DLM Incident to component DEV-IW-GEN. </des
           <pattern>.*Client .*is not available in this system.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>d4cc6c53-70de-43db-b67f-6d9c79805e28</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>d4cc6c53-70de-43db-b67f-6d9c79805e28</string>
   </entry>
 </causes>
 <causes>
@@ -99,7 +107,9 @@ If you are sure they're OK, create a DLM Incident to component DEV-IW-GEN. </des
           <pattern>.*can not be uploaded into Hotfix system.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>e126e5b0-fa01-4767-b9c2-4577c6d6479e</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>e126e5b0-fa01-4767-b9c2-4577c6d6479e</string>
   </entry>
 </causes>
 <causes>
@@ -140,7 +150,9 @@ If you are sure they're OK, create a DLM Incident to component DEV-IW-GEN. </des
           <pattern>.*Inconsistent state - BSP locked in transport request but the correction request is not in status.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>1dda3dfa-f3ad-41f1-902b-5b6bf4b7cee0</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>1dda3dfa-f3ad-41f1-902b-5b6bf4b7cee0</string>
   </entry>
 </causes>
 <causes>
@@ -196,7 +208,9 @@ If you are sure they're OK, create a DLM Incident to component DEV-IW-GEN. </des
           <pattern>.*==&gt; SAPUI5 library/component.*does not exist.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>13206b9f-9b19-48e6-be0c-a7783585599b</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>13206b9f-9b19-48e6-be0c-a7783585599b</string>
   </entry>
 </causes>
 <causes>
@@ -210,7 +224,9 @@ If you are sure they're OK, create a DLM Incident to component DEV-IW-GEN. </des
           <pattern>.*Virus scan server error.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>e42986d0-caad-4b49-8c6a-2f8a67b54e38</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>e42986d0-caad-4b49-8c6a-2f8a67b54e38</string>
   </entry>
 </causes>
 <causes>
@@ -224,7 +240,9 @@ If you are sure they're OK, create a DLM Incident to component DEV-IW-GEN. </des
           <pattern>.*Software compponent.*is not open for corrections.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>8353c3b7-17da-49ec-adcd-3d167cd59386</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>8353c3b7-17da-49ec-adcd-3d167cd59386</string>
   </entry>
 </causes>
 <causes>
@@ -238,7 +256,9 @@ If you are sure they're OK, create a DLM Incident to component DEV-IW-GEN. </des
           <pattern>.*Error       ==&gt; HTTP status was 404 / Not Found.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>e3af4122-d57b-4006-a1ba-e79c85019e66</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>e3af4122-d57b-4006-a1ba-e79c85019e66</string>
   </entry>
 </causes>
 <causes>
@@ -255,7 +275,9 @@ If rebuild fails , try again after 1 hour . If the issue still persists create a
           <pattern>.*Communication error to GTADIR.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>e38a9321-c728-4161-a583-27e590ea02ea</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>e38a9321-c728-4161-a583-27e590ea02ea</string>
   </entry>
 </causes>
 <causes>
@@ -270,7 +292,9 @@ Request for package creation by creating DLM incident under the component DEV-IW
           <pattern>.*&lt;&lt;&lt; PACKAGE: NA</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>8b3ae580-0239-4541-b3dc-f439c3b25ec3</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>8b3ae580-0239-4541-b3dc-f439c3b25ec3</string>
   </entry>
 </causes>
 <causes>
@@ -284,7 +308,9 @@ Request for package creation by creating DLM incident under the component DEV-IW
           <pattern>.*Request.*does not have transport target.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>38dab2eb-755c-4180-8b8a-bfa9d5240afb</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>38dab2eb-755c-4180-8b8a-bfa9d5240afb</string>
   </entry>
 </causes>
 <causes>
@@ -300,7 +326,9 @@ create a DLM incident under DEV-IW-GEN
           <pattern>.*Error       ==&gt; In replication mode files can only be written as local content.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>baaa8cd8-2a6a-409d-8b09-f4d5d4bddf5f</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>baaa8cd8-2a6a-409d-8b09-f4d5d4bddf5f</string>
   </entry>
 </causes>
 <causes>
@@ -315,7 +343,9 @@ Just in case that project portal is set up correctly and you followed up all req
           <pattern>.*for goal com.sap.fiori:ca.infra.tools-maven-plugin:1.4.1:upload are missing or invalid .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>0a1ed735-83aa-40fe-bc05-ac3a252c5fee</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>0a1ed735-83aa-40fe-bc05-ac3a252c5fee</string>
   </entry>
 </causes>
 <causes>
@@ -330,7 +360,9 @@ Component - DEV-IW-GEN</description>
           <pattern>.*Function FIOCWB_VALIDATE_FIORI_PACKAGE not available.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>ab7247eb-1a1c-451a-b051-2ac292137d99</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>ab7247eb-1a1c-451a-b051-2ac292137d99</string>
   </entry>
 </causes>
 <causes>
@@ -344,7 +376,9 @@ Component - DEV-IW-GEN</description>
           <pattern>.*ERROR: The last uploaded UI Version.*which should be uploaded.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>d53836a1-30bb-4a96-8fa5-cc23eea36cab</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>d53836a1-30bb-4a96-8fa5-cc23eea36cab</string>
   </entry>
 </causes>
 <causes>
@@ -363,7 +397,9 @@ Solution: Makes sure there is a valid GIT repository existing for this project. 
           <pattern>.*ERROR: Error cloning remote repo .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>8f6ccf43-c087-4b28-8dd3-052cbc672c84</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>8f6ccf43-c087-4b28-8dd3-052cbc672c84</string>
   </entry>
 </causes>
 <causes>
@@ -378,7 +414,9 @@ Solution: open BCP Ticket on DEV-IW-GEN to assign needed authorization.</descrip
           <pattern>.*is not authorized to create tasks.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>e99005f9-3106-4ae2-9a05-2ce202e5bcbe</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>e99005f9-3106-4ae2-9a05-2ce202e5bcbe</string>
   </entry>
 </causes>
 <causes>
@@ -395,7 +433,9 @@ For a assigment of a corresponding SWC to the package please create a DLM ticket
           <pattern>.*No development system found for component LOCAL in table FIORI_SYS_LIST.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>d8875b8e-ee3c-4016-bc51-e29bc45e5df3</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>d8875b8e-ee3c-4016-bc51-e29bc45e5df3</string>
   </entry>
 </causes>
 <causes>
@@ -409,7 +449,9 @@ For a assigment of a corresponding SWC to the package please create a DLM ticket
           <pattern>.*Another deployment is still running.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>9cb24aaf-1336-4b9e-a6ce-2684d5e4fb15</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>9cb24aaf-1336-4b9e-a6ce-2684d5e4fb15</string>
   </entry>
 </causes>
 <causes>
@@ -423,7 +465,9 @@ For a assigment of a corresponding SWC to the package please create a DLM ticket
           <pattern>.*FATAL: Null value not allowed as an environment variable: ABAPMSServer.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>66f5055c-8e87-471c-957f-065c00cabd85</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>66f5055c-8e87-471c-957f-065c00cabd85</string>
   </entry>
 </causes>
 <causes>
@@ -437,7 +481,9 @@ For a assigment of a corresponding SWC to the package please create a DLM ticket
           <pattern>.*Upgrade still running: Logon not possible.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>37e4504e-7d7b-4378-842a-e691dad229e6</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>37e4504e-7d7b-4378-842a-e691dad229e6</string>
   </entry>
 </causes>
 <causes>
@@ -455,7 +501,9 @@ Solution: change status of correction request in I7p to "in process".</descripti
           <pattern> .*but the correction request is not in status "In Process".*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>32b4b94c-c6d5-480d-9e95-c5544c81492e</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>32b4b94c-c6d5-480d-9e95-c5544c81492e</string>
   </entry>
 </causes>
 <causes>
@@ -469,7 +517,9 @@ Solution: change status of correction request in I7p to "in process".</descripti
           <pattern>.*Error: Receiving application values for release context:.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>5acab10d-5d13-4548-a0ea-77d5baf3aed6</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>5acab10d-5d13-4548-a0ea-77d5baf3aed6</string>
   </entry>
 </causes>
 <causes>
@@ -508,7 +558,9 @@ Solution: change status of correction request in I7p to "in process".</descripti
           <pattern>.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>93e8db5a-3461-4802-882d-7004aa0daac5</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>93e8db5a-3461-4802-882d-7004aa0daac5</string>
   </entry>
 </causes>
 <causes>
@@ -523,7 +575,9 @@ Contact your translation coordinator</description>
           <pattern>.*You don't have authorization for operation PUT_ORIGINAL in translation area.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>7e41adc3-77e5-43cc-823a-2c66c804720e</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>7e41adc3-77e5-43cc-823a-2c66c804720e</string>
   </entry>
 </causes>
 <causes>
@@ -537,7 +591,9 @@ Contact your translation coordinator</description>
           <pattern>.*there is no POM in this directory.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>45c9aa01-c117-4b04-8bd7-06a799f6371b</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>45c9aa01-c117-4b04-8bd7-06a799f6371b</string>
   </entry>
 </causes>
 <causes>
@@ -552,7 +608,9 @@ for a workaround see &lt;a href="https://wiki.wdf.sap.corp/wiki/pages/viewpage.a
           <pattern>.*could not determine prefix .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>07cd5f24-de46-4a37-9f61-c5252888e7fe</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>07cd5f24-de46-4a37-9f61-c5252888e7fe</string>
   </entry>
 </causes>
 <causes>
@@ -568,7 +626,9 @@ In case you don't want test to be executed you need to remove or rename the test
           <pattern>.*Found 0 test pages.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>adebf5ad-1e89-48d9-a2e4-e5b7cc114896</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>adebf5ad-1e89-48d9-a2e4-e5b7cc114896</string>
   </entry>
 </causes>
 <causes>
@@ -586,7 +646,9 @@ In case you don't want test to be executed you need to remove or rename the test
           <pattern>.*Possible reasons: job is disabled, job does not exist, checkmarx jenkins is not reachable.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>af2d339f-747b-4e3c-90fb-e2ed6913382c</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>af2d339f-747b-4e3c-90fb-e2ed6913382c</string>
   </entry>
 </causes>
 <causes>
@@ -604,7 +666,9 @@ Either you don't want to execute tests, in that case rename or remove the test s
           <pattern>.*No test report files were found.*Configuration error.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>d0b2f1c8-3f35-4025-b7a3-a657f0144483</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>d0b2f1c8-3f35-4025-b7a3-a657f0144483</string>
   </entry>
 </causes>
 <causes>
@@ -618,7 +682,9 @@ Either you don't want to execute tests, in that case rename or remove the test s
           <pattern>.*There was an issue reading the projects pom.xml.*pom\.xml does not exist.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>ccaaabb0-b19a-4341-861c-f8e20151002e</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>ccaaabb0-b19a-4341-861c-f8e20151002e</string>
   </entry>
 </causes>
 <causes>
@@ -632,7 +698,9 @@ Either you don't want to execute tests, in that case rename or remove the test s
           <pattern>.*Open Source Software Security vulnerabilities with CVSS score greater or equal.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>ec00ddc0-8713-4ef4-8587-cc7b79ce1cfa</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>ec00ddc0-8713-4ef4-8587-cc7b79ce1cfa</string>
   </entry>
 </causes>
 <causes>
@@ -646,7 +714,9 @@ Either you don't want to execute tests, in that case rename or remove the test s
           <pattern>.*ReferenceError: sap is not defined.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>ae367f3f-b713-449b-9b63-f4be6fc3f772</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>ae367f3f-b713-449b-9b63-f4be6fc3f772</string>
   </entry>
 </causes>
 <causes>
@@ -663,7 +733,9 @@ Please create a DLM ticket on DEV-IW-GEN.</description>
           <pattern>.*The name must start with a lowercase character, followed by lowercase alphanumeric characters with a maximum length of 30 characters.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>ff94efc4-1128-43ed-bf1e-f65136da31b1</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>ff94efc4-1128-43ed-bf1e-f65136da31b1</string>
   </entry>
 </causes>
 <causes>
@@ -677,7 +749,9 @@ Remove the test file in testsuite.qunit.html or qunit.runner.testsuite.html whic
           <pattern>.*The test .*executed successfully but did not report any tests at all\. Please review your test content.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>149a8873-deba-49fa-a5f6-c5837a18b645</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>149a8873-deba-49fa-a5f6-c5837a18b645</string>
   </entry>
 </causes>
 <causes>
@@ -694,7 +768,9 @@ src/main/webapp/3rdparty/file1.js
           <pattern>.*Requested array size exceeds VM limit.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>35d9cafa-f946-40b6-a83a-feeaf698a401</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>35d9cafa-f946-40b6-a83a-feeaf698a401</string>
   </entry>
 </causes>
 <causes>
@@ -710,7 +786,9 @@ src/main/webapp/3rdparty/file1.js
           <pattern>.*No dependencies defined in package.json.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>6a1716e2-0ba8-4589-8c04-56f99dc168dd</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>6a1716e2-0ba8-4589-8c04-56f99dc168dd</string>
   </entry>
 </causes>
 <causes>
@@ -724,7 +802,9 @@ src/main/webapp/3rdparty/file1.js
           <pattern>.*Archive can not be read because of virus scaner issues.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>1cfb08ad-5717-4e45-8ecc-b3d9c5386584</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>1cfb08ad-5717-4e45-8ecc-b3d9c5386584</string>
   </entry>
 </causes>
 <causes>
@@ -741,7 +821,9 @@ If you think this  is a false positive, please proceed as described &lt;a href="
           <pattern>.*APPDESCRIPTOR_INVALID_UNKNOWN_ACH.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>73656038-3d4e-466b-97a1-e077223b3f43</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>73656038-3d4e-466b-97a1-e077223b3f43</string>
   </entry>
 </causes>
 <causes>
@@ -755,7 +837,9 @@ If you think this  is a false positive, please proceed as described &lt;a href="
           <pattern>.*RELEASE_TASKS finished with ERROR.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>ff8592c9-3b46-4a61-8f9d-453bee991e45</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>ff8592c9-3b46-4a61-8f9d-453bee991e45</string>
   </entry>
 </causes>
 <causes>
@@ -774,7 +858,9 @@ For details on the correction process refer &lt;a href = "https://wiki.wdf.sap.c
           <pattern>.*no corresponding correction instruction.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>cd4135d8-47fb-4312-b106-3f559e4d25e7</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>cd4135d8-47fb-4312-b106-3f559e4d25e7</string>
   </entry>
 </causes>
 <causes>
@@ -788,7 +874,9 @@ For details on the correction process refer &lt;a href = "https://wiki.wdf.sap.c
           <pattern>.*which locks the bsp.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>7fdd1879-54f1-43a8-baf7-a3a5034918b1</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>7fdd1879-54f1-43a8-baf7-a3a5034918b1</string>
   </entry>
 </causes>
 <causes>
@@ -802,7 +890,9 @@ For details on the correction process refer &lt;a href = "https://wiki.wdf.sap.c
           <pattern>.*must be implemented in the Hotfix system.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>2d43caaf-1b1d-4e26-80a9-e9fca8e684f8</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>2d43caaf-1b1d-4e26-80a9-e9fca8e684f8</string>
   </entry>
 </causes>
 <causes>
@@ -816,7 +906,9 @@ For details on the correction process refer &lt;a href = "https://wiki.wdf.sap.c
           <pattern>.*No existing request can be used for change recording.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>c89824f2-ecd7-4bd7-ab97-a3d5d8f56d7b</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>c89824f2-ecd7-4bd7-ab97-a3d5d8f56d7b</string>
   </entry>
 </causes>
 <causes>
@@ -830,7 +922,9 @@ For details on the correction process refer &lt;a href = "https://wiki.wdf.sap.c
           <pattern>.*Stage ABAP Deploy.*status: FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>41620950-a85f-415e-a263-22d1dc65c652</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>41620950-a85f-415e-a263-22d1dc65c652</string>
   </entry>
 </causes>
 <causes>
@@ -843,7 +937,9 @@ For details on the correction process refer &lt;a href = "https://wiki.wdf.sap.c
           <pattern>.*Failed to execute goal com.sap.ldi:translation-plugin.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>0d4f6e4d-ded4-45d4-ab82-4e80e7350646</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>0d4f6e4d-ded4-45d4-ab82-4e80e7350646</string>
   </entry>
 </causes>
 <causes>
@@ -859,7 +955,9 @@ If you can not solve the the problem please create an &lt;a href="https://github
           <pattern>.*Uncaught Error: failed to load .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>2ce27df2-fa6c-490b-ac50-95a46e105b93</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>2ce27df2-fa6c-490b-ac50-95a46e105b93</string>
   </entry>
 </causes>
 <causes>
@@ -876,7 +974,9 @@ If you can not solve the issue by yourself, please open an &lt;a href="https://g
           <pattern>.*Vyper.*Tests.*Failed.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>b63c1c0f-f0c9-457b-ba71-6f20bebe2499</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>b63c1c0f-f0c9-457b-ba71-6f20bebe2499</string>
   </entry>
 </causes>
 <causes>
@@ -889,7 +989,9 @@ If you can not solve the issue by yourself, please open an &lt;a href="https://g
           <pattern>kahsdlkajshdjkashldkjhaskdjsa</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>b1f40d8b-15be-4af1-b33f-452dfdfc63ef</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>b1f40d8b-15be-4af1-b33f-452dfdfc63ef</string>
   </entry>
 </causes>
 <causes>
@@ -909,7 +1011,9 @@ If you can not solve the issue by yourself, please open an &lt;a href="https://g
           <pattern>.*maximum length of BSP is 15 sign.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>4f3b9eda-22c8-491c-934a-0fdae53d55e6</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>4f3b9eda-22c8-491c-934a-0fdae53d55e6</string>
   </entry>
 </causes>
 <causes>
@@ -929,7 +1033,9 @@ Solution: access the project portal entry of this project and click on "Administ
           <pattern>.*prohibited by Gerrit: not permitted: update by submit on refs/heads/master.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>0f9d8658-f859-4c45-9a40-89945b9b0a8a</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>0f9d8658-f859-4c45-9a40-89945b9b0a8a</string>
   </entry>
 </causes>
 <causes>
@@ -946,7 +1052,9 @@ Solution: The respective colleagues have to logon once to https://git.wdf.sap.co
           <pattern>.*User not registered in Gerrit</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>462b63b8-d593-4064-bb9c-c10d6967d37d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>462b63b8-d593-4064-bb9c-c10d6967d37d</string>
   </entry>
 </causes>
 <causes>
@@ -961,7 +1069,9 @@ Solution: The respective colleagues have to logon once to https://git.wdf.sap.co
           <pattern>.*JCO Exception while trying to retrieve ABAP Destination: User is locked.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>810d110a-50f7-4339-8576-fb50931c8302</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>810d110a-50f7-4339-8576-fb50931c8302</string>
   </entry>
 </causes>
 <causes>
@@ -979,7 +1089,9 @@ Remember you need to be logged in to trigger a build.</description>
           <pattern>.*Cannot establish connection to the translation system 'B0X'.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>b2964179-17f6-4919-bd28-aa454c69e9c9</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>b2964179-17f6-4919-bd28-aa454c69e9c9</string>
   </entry>
 </causes>
 <causes>
@@ -993,7 +1105,9 @@ Please check whether you use an outdated snapshot version. For more information 
           <pattern>Non-resolvable parent POM</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>eb6f20d2-724d-45c0-86bb-1c39e3b3253a</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>eb6f20d2-724d-45c0-86bb-1c39e3b3253a</string>
   </entry>
 </causes>
 <causes>
@@ -1009,7 +1123,9 @@ Contact your project's translation coordinator, have him or her assign the colle
           <pattern>.*Collection .* is not assigned to a graph.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>d8d37d3c-8d17-407c-aa7f-a428a6bfc06b</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>d8d37d3c-8d17-407c-aa7f-a428a6bfc06b</string>
   </entry>
 </causes>
 <causes>
@@ -1041,7 +1157,9 @@ If required, change the dependency (group, artifactIdD, version) accordingly, if
           <pattern>.*The build could not read 1 project .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>e0db63d6-6705-4bb8-90bb-505f8d2ca58b</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>e0db63d6-6705-4bb8-90bb-505f8d2ca58b</string>
   </entry>
 </causes>
 <causes>
@@ -1068,7 +1186,9 @@ If required, change the dependency (group, artifactIdD, version) accordingly, if
           <pattern>.*Error: ABAP Package .* does not exist in the current system.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>86ef9186-d77a-4820-86ed-f880455d0c0d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>86ef9186-d77a-4820-86ed-f880455d0c0d</string>
   </entry>
 </causes>
 <causes>
@@ -1084,7 +1204,9 @@ Check the log for details on the error cause. If you cannot fix the error yourse
           <pattern>.*Releasing the transport failed .*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>2d80fa55-b8a1-45ef-96bd-7a7490061482</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>2d80fa55-b8a1-45ef-96bd-7a7490061482</string>
   </entry>
 </causes>
 <causes>
@@ -1099,7 +1221,9 @@ See &lt;a href="https://wiki.wdf.sap.corp/wiki/pages/viewpage.action?pageId=1868
           <pattern>.*stderr: fatal: couldn't find remote ref [$]GERRIT_REFSPEC.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>c0115e06-9f11-46d9-bcc6-775b2802c94d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>c0115e06-9f11-46d9-bcc6-775b2802c94d</string>
   </entry>
 </causes>
 <causes>
@@ -1116,7 +1240,9 @@ Check the console log for details on the errors and correct the errors</descript
           <pattern>.*Quality issue: .*:High.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>a17d2b26-9a06-40fc-b026-32a01f53d090</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>a17d2b26-9a06-40fc-b026-32a01f53d090</string>
   </entry>
 </causes>
 <causes>
@@ -1131,7 +1257,9 @@ Check the console log for details on the errors and correct the errors</descript
           <pattern>.*There are test failures.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>1bc63fe2-e064-4cbb-b8b5-717ccedb631a</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>1bc63fe2-e064-4cbb-b8b5-717ccedb631a</string>
   </entry>
 </causes>
 <causes>
@@ -1147,7 +1275,9 @@ If you cant fix the issue on your own, you may create a  DLM Incident for SLS-OT
           <pattern>\[ERROR\] The key .*' has no translation type.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>07f337b1-5476-4775-8dcd-ad36fc509009</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>07f337b1-5476-4775-8dcd-ad36fc509009</string>
   </entry>
 </causes>
 <causes>
@@ -1170,7 +1300,9 @@ One reason could be that the tests simply do not start at all. Best would be to 
           <pattern>-*Build timed out .*after 10 minutes.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>2d42ec7a-869c-4abb-a008-dd3435f62c59</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>2d42ec7a-869c-4abb-a008-dd3435f62c59</string>
   </entry>
 </causes>
 <causes>
@@ -1189,7 +1321,9 @@ Request or unlock user via the Self Service (https://portal.wdf.sap.corp/go/devu
           <pattern>.* /SVT/CMREQ_M2	User.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>2b5a4422-1117-4e49-879e-4909e0d8d241</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>2b5a4422-1117-4e49-879e-4909e0d8d241</string>
   </entry>
 </causes>
 <causes>
@@ -1203,7 +1337,9 @@ Request or unlock user via the Self Service (https://portal.wdf.sap.corp/go/devu
           <pattern>.*can not be uploaded into Hotfix system.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>9fac58b7-0e2c-44de-938a-cad140b4ddfc</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>9fac58b7-0e2c-44de-938a-cad140b4ddfc</string>
   </entry>
 </causes>
 <causes>
@@ -1218,7 +1354,9 @@ Solution: Create a transport in client specified for UI5 FIORI application. The 
           <pattern>.*Transport request does not targets the upload client.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>47f58470-11be-4027-a918-4a6b25d487a2</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>47f58470-11be-4027-a918-4a6b25d487a2</string>
   </entry>
 </causes>
 <causes>
@@ -1234,7 +1372,9 @@ Solution: Relocate your manifest.json to the root of your project.
           <pattern>.*No manifest.json found in.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>f77c57be-d1f8-47c6-9158-5b1410af9f6d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>f77c57be-d1f8-47c6-9158-5b1410af9f6d</string>
   </entry>
 </causes>
 <causes>
@@ -1270,7 +1410,9 @@ Solution: Relocate your manifest.json to the root of your project.
           <pattern>.*Error from correction.*is not authorized to change requests.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>a1a2cdd2-28f4-4a91-ae43-9ce0c88933c1</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>a1a2cdd2-28f4-4a91-ae43-9ce0c88933c1</string>
   </entry>
 </causes>
 <causes>
@@ -1284,7 +1426,9 @@ Solution: Relocate your manifest.json to the root of your project.
           <pattern>.*can not be uploaded into Hotfix system. A hotfix is only required.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>11a4c24c-8a75-4f2f-a633-c8d5107c471f</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>11a4c24c-8a75-4f2f-a633-c8d5107c471f</string>
   </entry>
 </causes>
 <causes>
@@ -1303,7 +1447,9 @@ If you don't find here information about the issue, create a DLM incident under 
           <pattern>.*https://projectportal.tools.sap/.*not found. Host reports a temporary problem: 503 Service Unavailable.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>f55eb1ae-0cfa-4b74-8045-4c31bae23020</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>f55eb1ae-0cfa-4b74-8045-4c31bae23020</string>
   </entry>
 </causes>
 <causes>
@@ -1318,7 +1464,9 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
           <pattern>.*-pp-property-updater.*completed  : FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>fde4700b-755b-4498-8b8e-5618c7430402</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>fde4700b-755b-4498-8b8e-5618c7430402</string>
   </entry>
 </causes>
 <causes>
@@ -1332,7 +1480,9 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
           <pattern>.*success-email.*completed  : FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>b68c664b-9a36-4fbf-bdb8-3d3b46f957e1</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>b68c664b-9a36-4fbf-bdb8-3d3b46f957e1</string>
   </entry>
 </causes>
 <causes>
@@ -1349,7 +1499,9 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
           <pattern>.*cwb-upload.*completed  : FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>f6f43388-1580-4bdf-9a1f-b8865ab2b1b0</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>f6f43388-1580-4bdf-9a1f-b8865ab2b1b0</string>
   </entry>
 </causes>
 <causes>
@@ -1363,7 +1515,9 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
           <pattern>.*SAP names file for FIOINFRA locked by another process.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>41cb19b9-69ef-4e75-8fdc-cb4dc15cf9e4</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>41cb19b9-69ef-4e75-8fdc-cb4dc15cf9e4</string>
   </entry>
 </causes>
 <causes>
@@ -1379,7 +1533,9 @@ Solution: Retrigger the singleAppFlow.  If the issue persists create a DLM incid
           <pattern>.*-gav_info.*completed  : FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>c891b34b-83dd-4e01-91ee-af87108555d0</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>c891b34b-83dd-4e01-91ee-af87108555d0</string>
   </entry>
 </causes>
 <causes>
@@ -1394,7 +1550,9 @@ Solution: Retrigger the singleAppFlow. If the issue persists create a DLM incide
           <pattern>.*-mrc.*completed  : FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>8c58ec1e-41e2-4801-8f24-af849c7ad749</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>8c58ec1e-41e2-4801-8f24-af849c7ad749</string>
   </entry>
 </causes>
 <causes>
@@ -1409,7 +1567,9 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
           <pattern>.*-xmake_call.*completed  : FAILURE.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>24e5fcf1-d9f7-4cf3-ab59-1bc46586897a</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>24e5fcf1-d9f7-4cf3-ab59-1bc46586897a</string>
   </entry>
 </causes>
 <causes>
@@ -1423,7 +1583,9 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
           <pattern>.*SYSTEM_CORE_DUMPED.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>bae5596e-c557-4534-ac71-7167d4301143</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>bae5596e-c557-4534-ac71-7167d4301143</string>
   </entry>
 </causes>
 <causes>
@@ -1437,7 +1599,9 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
           <pattern>.*Transport request.*is already released.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>d5ff13c7-c659-4187-a3cc-8921a008352c</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>d5ff13c7-c659-4187-a3cc-8921a008352c</string>
   </entry>
 </causes>
 <causes>
@@ -1464,7 +1628,9 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
           <pattern>.*Error       ==&gt; File .*locked.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>f11fa342-416f-427d-bf7c-b13577a3c700</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>f11fa342-416f-427d-bf7c-b13577a3c700</string>
   </entry>
 </causes>
 <causes>
@@ -1481,7 +1647,9 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
           <pattern>.*entered package is not the same as in TADIR.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>6f4969cf-76f0-4050-b124-64eb9edb6d5d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>6f4969cf-76f0-4050-b124-64eb9edb6d5d</string>
   </entry>
 </causes>
 <causes>
@@ -1495,7 +1663,9 @@ Solution: Retrigger the build. If the issue persists create a DLM incident under
           <pattern>.*Error on sending Email: Invalid Addresses.*Address not found.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>62316e6d-d766-428e-860f-13b24a91ada9</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>62316e6d-d766-428e-860f-13b24a91ada9</string>
   </entry>
 </causes>
 <causes>
@@ -1511,7 +1681,9 @@ Solution: please create Ticket on CA-UI5-FL-LRP</description>
           <pattern>.*Deletion.* .*failed.* .*is referenced by.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>b370549d-5e00-425f-a86a-e7b719948da3</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>b370549d-5e00-425f-a86a-e7b719948da3</string>
   </entry>
 </causes>
 <causes>
@@ -1525,7 +1697,9 @@ Solution: please create Ticket on CA-UI5-FL-LRP</description>
           <pattern>.* No destination to development system found.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>bbb00b9c-da71-40f1-a213-86cb3a15586d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>bbb00b9c-da71-40f1-a213-86cb3a15586d</string>
   </entry>
 </causes>
 <causes>
@@ -1552,7 +1726,9 @@ Solution: please create Ticket on CA-UI5-FL-LRP</description>
           <pattern>.*All BSPs in software component UIS4HOP1 and UIEPPMS4 has to end with S1.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>ec57802c-4120-4bf8-a00c-9c8782dffb43</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>ec57802c-4120-4bf8-a00c-9c8782dffb43</string>
   </entry>
 </causes>
 <causes>
@@ -1581,7 +1757,9 @@ Solution: please create Ticket on CA-UI5-FL-LRP</description>
           <pattern>.*Exists in other original system.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>ecee29c1-a525-4da7-be8e-9ef1154bda53</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>ecee29c1-a525-4da7-be8e-9ef1154bda53</string>
   </entry>
 </causes>
 <causes>
@@ -1596,7 +1774,9 @@ Solution: delete BSP and create (upload) it again. Don´t do anything manually, 
           <pattern>.*SICF node.*is missing.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>cb0125be-ceb5-44d1-8c6b-7f462c9aa1fe</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>cb0125be-ceb5-44d1-8c6b-7f462c9aa1fe</string>
   </entry>
 </causes>
 <causes>
@@ -1622,7 +1802,9 @@ Solution: delete BSP and create (upload) it again. Don´t do anything manually, 
           <pattern>.*target group.*is not found in TMS.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>7535a1db-83f6-48c5-9673-08287c1f70aa</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>7535a1db-83f6-48c5-9673-08287c1f70aa</string>
   </entry>
 </causes>
 <causes>
@@ -1648,7 +1830,9 @@ Solution: delete BSP and create (upload) it again. Don´t do anything manually, 
           <pattern>.*FIORI_SYS_LIST for Software componnent LOCAL.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>148e6fe5-331b-4aac-a936-9119cc0e0c58</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>148e6fe5-331b-4aac-a936-9119cc0e0c58</string>
   </entry>
 </causes>
 <causes>
@@ -1675,7 +1859,9 @@ Solution: delete BSP and create (upload) it again. Don´t do anything manually, 
           <pattern>.*JCO Connection Exception when processing: :.*unknown.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>6d1c7885-e3a3-45e4-9750-448f6cf9fd79</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>6d1c7885-e3a3-45e4-9750-448f6cf9fd79</string>
   </entry>
 </causes>
 <causes>
@@ -1689,7 +1875,9 @@ Solution: delete BSP and create (upload) it again. Don´t do anything manually, 
           <pattern>.*entered package is not the same as in TADIR.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>921b08c1-48e1-435c-aecb-b3d0e840e362</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>921b08c1-48e1-435c-aecb-b3d0e840e362</string>
   </entry>
 </causes>
 <causes>
@@ -1704,7 +1892,9 @@ For details refer &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fioritech/H
           <pattern>.*For a hotfix relevant release context.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>18ff27d5-fd93-4f96-a94f-afd5ec68c0b9</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>18ff27d5-fd93-4f96-a94f-afd5ec68c0b9</string>
   </entry>
 </causes>
 <causes>
@@ -1724,7 +1914,9 @@ If deletion of pages is needed in any case, please open an BCP Ticket on DEV-IW-
           <pattern>.*Page delitions found !.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>e8057571-1ed7-4d3c-aad6-8bd9dcf8f99d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>e8057571-1ed7-4d3c-aad6-8bd9dcf8f99d</string>
   </entry>
 </causes>
 <causes>
@@ -1741,7 +1933,9 @@ Solution: Restart the SingleAppFlow with a Release Context. For questions contac
           <pattern>.*Error: No input found for parameter: Release Context.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>b9b576e4-d9d0-40be-9ae6-5effdf219eaf</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>b9b576e4-d9d0-40be-9ae6-5effdf219eaf</string>
   </entry>
 </causes>
 <causes>
@@ -1761,7 +1955,9 @@ Solution: Restart the SingleAppFlow with a Release Context. For questions contac
           <pattern>.*ERROR.*partner.*ldciuyt.wdf.sap.corp.*not reached.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>314f2d81-eea2-4834-a284-0fbeacc87944</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>314f2d81-eea2-4834-a284-0fbeacc87944</string>
   </entry>
 </causes>
 <causes>
@@ -1778,7 +1974,9 @@ Use the newest parent pom version as listed &lt;a href="https://wiki.wdf.sap.cor
           <pattern>.*Cannot establish connection to the translation system 'B0Y'.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>57d81f2a-00a0-492d-8893-c4aac96e6aeb</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>57d81f2a-00a0-492d-8893-c4aac96e6aeb</string>
   </entry>
 </causes>
 <causes>
@@ -1792,7 +1990,9 @@ Use the newest parent pom version as listed &lt;a href="https://wiki.wdf.sap.cor
           <pattern>.*Couldn't find any revision to build.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>1a221ff4-1835-47c2-b464-b9e4900d5e01</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>1a221ff4-1835-47c2-b464-b9e4900d5e01</string>
   </entry>
 </causes>
 <causes>
@@ -1807,7 +2007,9 @@ Use the newest parent pom version as listed &lt;a href="https://wiki.wdf.sap.cor
           <pattern>.*the new parent pom version .* is not provided properly.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>aa75605d-09d9-4df2-a350-453eb8392e06</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>aa75605d-09d9-4df2-a350-453eb8392e06</string>
   </entry>
 </causes>
 <causes>
@@ -1821,7 +2023,9 @@ Use the newest parent pom version as listed &lt;a href="https://wiki.wdf.sap.cor
           <pattern>.*version.json : Archive empty, corrupt, or IV_URL is wrong !.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>f90bc0fb-aa0a-4a48-a84c-9624ae8621a0</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>f90bc0fb-aa0a-4a48-a84c-9624ae8621a0</string>
   </entry>
 </causes>
 <causes>
@@ -1840,7 +2044,9 @@ In case you can not find a solution by yourself or think that this is a false po
           <pattern>.*ErrorEslint:hudson.AbortException: script returned exit code 1.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>a9703e28-63bd-48b1-baca-6ae562be1c7a</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>a9703e28-63bd-48b1-baca-6ae562be1c7a</string>
   </entry>
 </causes>
 <causes>
@@ -1856,7 +2062,9 @@ Make sure you provide a link to the job log in the ticket.</description>
           <pattern>.*Failed to get SAST scan results.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>1f5a2b36-e26d-4193-937f-0e521c8f419a</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>1f5a2b36-e26d-4193-937f-0e521c8f419a</string>
   </entry>
 </causes>
 <causes>
@@ -1870,7 +2078,9 @@ Make sure you provide a link to the job log in the ticket.</description>
           <pattern>.*No source folder src or webapp found.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>1fdd19fa-0b65-4ddb-857e-74b98e65f301</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>1fdd19fa-0b65-4ddb-857e-74b98e65f301</string>
   </entry>
 </causes>
 <causes>
@@ -1888,7 +2098,9 @@ Please check &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Troub
           <pattern>org.openqa.selenium.ScriptTimeoutException: asynchronous script timeout: result was not received in</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>dcb755eb-d010-45fa-bc3b-ae6a9c83b692</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>dcb755eb-d010-45fa-bc3b-ae6a9c83b692</string>
   </entry>
 </causes>
 <causes>
@@ -1901,7 +2113,9 @@ Please check &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Troub
           <pattern>.*error message.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>ff8b769c-6e7c-4723-adcc-9ede3f9e067b</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>ff8b769c-6e7c-4723-adcc-9ede3f9e067b</string>
   </entry>
 </causes>
 <causes>
@@ -1916,7 +2130,9 @@ Please check &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Troub
           <pattern>.*Error while loading testpage.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>87933493-08fb-406b-b1a9-2496c3258b2e</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>87933493-08fb-406b-b1a9-2496c3258b2e</string>
   </entry>
 </causes>
 <causes>
@@ -1931,7 +2147,9 @@ Please check &lt;a href="https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Troub
           <pattern>.*Your pipelineConfig.yml is not schema compliant.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>fef99dd5-5afe-4471-8be0-c466c6a4914f</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>fef99dd5-5afe-4471-8be0-c466c6a4914f</string>
   </entry>
 </causes>
 <causes>
@@ -1946,7 +2164,9 @@ Please proceed as described &lt;a href=https://github.wdf.sap.corp/pages/S4FIORI
           <pattern>.*QUnit.*OPA5 Karma Failed.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>84ea4bed-a607-4d0c-b486-c8499a5ca9f7</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>84ea4bed-a607-4d0c-b486-c8499a5ca9f7</string>
   </entry>
 </causes>
 <causes>
@@ -1966,7 +2186,9 @@ Other structures are not supported!
           <pattern>.*No source folder src or webapp found.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>9aa1a86a-43c7-44d6-9cb9-6e8bd609da3b</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>9aa1a86a-43c7-44d6-9cb9-6e8bd609da3b</string>
   </entry>
 </causes>
 <causes>
@@ -1982,7 +2204,9 @@ Please create an &lt;a href="https://github.wdf.sap.corp/S4FIORI-CD/fiori.pipeli
           <pattern>.*ErrorEslint:hudson.AbortException: script returned exit code 2.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>5bab8b14-1985-4cd2-9625-e0d1772b198f</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>5bab8b14-1985-4cd2-9625-e0d1772b198f</string>
   </entry>
 </causes>
 <causes>
@@ -2000,7 +2224,9 @@ In case you can not find a solution by yourself or think that this is a false po
           <pattern>.*ESLint check failed.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>911f7d8a-65d2-4df5-8cd5-33a086cd82da</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>911f7d8a-65d2-4df5-8cd5-33a086cd82da</string>
   </entry>
 </causes>
 <causes>
@@ -2017,7 +2243,9 @@ For more information please check the docu for &lt;a href="https://github.wdf.sa
           <pattern>.*UIVeri5.*Test.*failed.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>18c5223e-5bb7-4f04-a4eb-15813ce41cb0</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>18c5223e-5bb7-4f04-a4eb-15813ce41cb0</string>
   </entry>
 </causes>
 <causes>
@@ -2034,7 +2262,9 @@ In the meantime you need to change your code accordingly.
           <pattern>.*no viable alternative at input 'const'.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>57f56984-4ff4-4227-83d2-469b4bfeca34</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>57f56984-4ff4-4227-83d2-469b4bfeca34</string>
   </entry>
 </causes>
 <causes>
@@ -2051,7 +2281,9 @@ If you can not solve the the problem please contact "DL S4HANA DAST Auditors"
           <pattern>.*Fiori Dast Scan Failed.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>7bc41d59-6288-4269-935b-a6b91a1f0e4f</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>7bc41d59-6288-4269-935b-a6b91a1f0e4f</string>
   </entry>
 </causes>
 <causes>
@@ -2068,7 +2300,9 @@ or create a DLM ticket on DEV-IW-GEN.&lt;/p&gt;</description>
           <pattern>.*Cloud Upload Failed!: Timeout after.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>8b494b4f-ad8d-43d1-bec9-33b7f1b1aa09</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>8b494b4f-ad8d-43d1-bec9-33b7f1b1aa09</string>
   </entry>
 </causes>
 <causes>
@@ -2083,7 +2317,9 @@ Please check &lt;a href=https://wiki.wdf.sap.corp/wiki/display/fiorisuite/Pom.xm
           <pattern>.*Could not detect parent project in pom.xml.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>3d3fc579-1abf-499c-8e1e-c17225476b1b</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>3d3fc579-1abf-499c-8e1e-c17225476b1b</string>
   </entry>
 </causes>
 <causes>
@@ -2097,7 +2333,9 @@ Currently we only support projects from Project Portal.</description>
           <pattern>.*Project Id from Projectportal not found.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>7f4e20fa-c012-4f74-8adf-8905f2f6f95d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>7f4e20fa-c012-4f74-8adf-8905f2f6f95d</string>
   </entry>
 </causes>
 <causes>
@@ -2112,7 +2350,9 @@ Please follow the instructions in &lt;a href=https://wiki.wdf.sap.corp/wiki/disp
           <pattern>.*Error finding uuid for file.*</pattern>
         </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
       </indications>
+      <id>1ae7cc1b-fc0d-4f8e-9d2a-38fa97093b0d</id>
     </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+    <string>1ae7cc1b-fc0d-4f8e-9d2a-38fa97093b0d</string>
   </entry>
 </causes></knowledgeBase>
   <nrOfScanThreads>3</nrOfScanThreads>

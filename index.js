@@ -1,6 +1,26 @@
 const { toXML } = require('jstoxml');
 const fs = require('fs');
 var jsonFail = require('./failure_cause.js').kb
+function uuid()
+{
+   var chars = '0123456789abcdef'.split('');
+
+   var uuid = [], rnd = Math.random, r;
+   uuid[8] = uuid[13] = uuid[18] = uuid[23] = '-';
+   uuid[14] = '4'; // version 4
+
+   for (var i = 0; i < 36; i++)
+   {
+      if (!uuid[i])
+      {
+         r = 0 | rnd()*16;
+
+         uuid[i] = chars[(i == 19) ? (r & 0x3) | 0x8 : r & 0xf];
+      }
+   }
+
+   return uuid.join('');
+}
 
 
 let result = new Object([])
@@ -25,15 +45,22 @@ for (el of jsonFail){
         catch (e){console.error(e)}
 
     let temp = Object.assign(el)
+    let id = uuid()
+    temp.id = id
+
     //structure
     result.push({
         _name: 'causes',
         _content: {
           _name: 'entry',
-          _content: {
+          _content: [{
             _name: 'com.sonyericsson.jenkins.plugins.bfa.model.FailureCause',
             _content: temp
-          }
+          },
+              {
+                  string: id
+              }
+          ]
         }
 
     })
